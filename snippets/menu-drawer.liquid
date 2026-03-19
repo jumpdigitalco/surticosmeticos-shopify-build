@@ -125,6 +125,13 @@
                   </span>
                 </a>
               {%- endif -%}
+              <a
+                href="/pages/tiendas"
+                class="stores-button flex items-center gap-2"
+              >
+                {%- render 'icons', icon: 'map-pin', size: 'large' -%}
+                <span>Tiendas</span>
+              </a>
               {%- if shop.customer_accounts_enabled -%}
                 <a
                   href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"

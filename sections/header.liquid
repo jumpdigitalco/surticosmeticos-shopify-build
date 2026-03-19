@@ -41,6 +41,9 @@
     --section-padding-top: {{ section.settings.header_top_padding_top }}px;
     --section-padding-bottom: {{ section.settings.header_top_padding_bottom }}px;
   }
+  #shopify-section-{{ section.id }} .cart-icon--bordered {
+    border: 0 !important;
+  }
   @media (max-width: 1023px) {
     #shopify-section-{{ section.id }} .header__bottom {
       --section-padding-top: 0;
@@ -183,6 +186,16 @@
             {% endif %}
           </a>
         {%- endif -%}
+        <a
+          href="/pages/tiendas"
+          class="stores-button reversed-link flex items-center justify-center gap-2"
+          aria-label="Tiendas"
+        >
+          {%- render 'icons', icon: 'map-pin', size: 'large' -%}
+          <span class="reversed-link__text hidden sm:block lg:hidden xl:block whitespace-nowrap">
+            Tiendas
+          </span>
+        </a>
         {%- if shop.customer_accounts_enabled -%}
           <a
             href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}"
@@ -191,7 +204,7 @@
           >
             {%- render 'icon-account', size: 'large' -%}
             {% if section.settings.customer_account_style == 'icon-with-text' %}
-              <span class="reversed-link__text hidden sm:block lg:hidden xl:block whitespace-nowrap">
+              <span class="reversed-link__text hidden sm:block lg:hidden whitespace-nowrap">
                 {%- liquid
                   if customer
                     echo 'customer.account_fallback' | t

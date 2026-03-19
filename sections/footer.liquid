@@ -203,6 +203,41 @@
                     {%- endcase -%}
                   {%- when 'newsletter' -%}
                     <div class="footer-newsletter text-{{ block.settings.newsletter_text_alignment }}">
+                      {%- liquid
+                        assign newsletter_image_desktop = block.settings.newsletter_image_desktop
+                        assign newsletter_image_mobile = block.settings.newsletter_image_mobile
+                        assign newsletter_image_width_desktop = block.settings.newsletter_image_width_desktop
+                        assign newsletter_image_width_mobile = block.settings.newsletter_image_width_mobile
+                        assign newsletter_image_desktop_style = 'max-width:' | append: newsletter_image_width_desktop | append: 'px;'
+                        assign newsletter_image_mobile_style = 'max-width:' | append: newsletter_image_width_mobile | append: 'px;'
+                        if newsletter_image_mobile == blank
+                          assign newsletter_image_mobile = newsletter_image_desktop
+                        endif
+                      -%}
+                      {%- if newsletter_image_desktop != blank or newsletter_image_mobile != blank -%}
+                        <div class="footer-newsletter__brand-image">
+                          {%- if newsletter_image_desktop != blank -%}
+                            {{
+                              newsletter_image_desktop
+                              | image_url: width: 600
+                              | image_tag:
+                                loading: 'lazy',
+                                class: 'footer-newsletter__brand-image-desktop',
+                                style: newsletter_image_desktop_style
+                            }}
+                          {%- endif -%}
+                          {%- if newsletter_image_mobile != blank -%}
+                            {{
+                              newsletter_image_mobile
+                              | image_url: width: 500
+                              | image_tag:
+                                loading: 'lazy',
+                                class: 'footer-newsletter__brand-image-mobile',
+                                style: newsletter_image_mobile_style
+                            }}
+                          {%- endif -%}
+                        </div>
+                      {%- endif -%}
                       {%- if block.settings.heading != blank -%}
                         <h3 class="footer-block__heading inline-richtext {{ block.settings.heading_size }}">
                           {{- block.settings.heading -}}
@@ -794,6 +829,36 @@
           "id": "newsletter_description",
           "default": "<p>Subscribe for store updates and discounts.</p>",
           "label": "t:general.text.label"
+        },
+        {
+          "type": "image_picker",
+          "id": "newsletter_image_desktop",
+          "label": "Imagen superior desktop"
+        },
+        {
+          "type": "image_picker",
+          "id": "newsletter_image_mobile",
+          "label": "Imagen superior mobile"
+        },
+        {
+          "type": "range",
+          "id": "newsletter_image_width_desktop",
+          "label": "Ancho imagen desktop",
+          "min": 120,
+          "max": 600,
+          "step": 10,
+          "unit": "px",
+          "default": 320
+        },
+        {
+          "type": "range",
+          "id": "newsletter_image_width_mobile",
+          "label": "Ancho imagen mobile",
+          "min": 100,
+          "max": 400,
+          "step": 10,
+          "unit": "px",
+          "default": 220
         },
         {
           "type": "richtext",

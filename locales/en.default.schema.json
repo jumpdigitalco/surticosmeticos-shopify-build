@@ -3381,6 +3381,18 @@
             },
             "enable_quick_add": {
               "label": "Enable quick add button"
+            },
+            "visibility": {
+              "label": "Visibility",
+              "options__mobile": {
+                "label": "Mobile only"
+              },
+              "options__desktop": {
+                "label": "Desktop only"
+              },
+              "options__both": {
+                "label": "Mobile and desktop"
+              }
             }
           }
         },

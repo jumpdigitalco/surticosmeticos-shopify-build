@@ -451,8 +451,20 @@
             </div>
           {%- endif -%}
         {%- when 'complementary' -%}
+          {%- liquid
+            assign complementary_visibility = block.settings.visibility | default: 'mobile'
+            assign complementary_visibility_class = ''
+            case complementary_visibility
+              when 'mobile'
+                assign complementary_visibility_class = 'md:hidden'
+              when 'desktop'
+                assign complementary_visibility_class = 'hidden md:block'
+              else
+                assign complementary_visibility_class = ''
+            endcase
+          -%}
           <div
-            class="{{ block_classes }} product__block--{{ block.type }}-{% if block.settings.make_collapsible_row %}collapsible{% else %}inline{% endif %}{% if block.settings.block_heading != blank %} has-heading{% endif %}"
+            class="{{ block_classes }}{% if complementary_visibility_class != blank %} {{ complementary_visibility_class }}{% endif %} product__block--{{ block.type }}-{% if block.settings.make_collapsible_row %}collapsible{% else %}inline{% endif %}{% if block.settings.block_heading != blank %} has-heading{% endif %}"
             {{ additional_attributes }}
             {{ block.shopify_attributes }}
           >

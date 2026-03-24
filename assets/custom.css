@@ -62,12 +62,23 @@
   color: var(--icon-with-text-icon, #2e0735);
 }
 
-/* PDP — Icon with text: textos de cada ítem 15px semibold, #2E0735 */
+/* PDP — Icon with text: textos de cada ítem 15px peso normal, #2E0735 */
 .section-main-product .product__block--icon-with-text .icon-with-text__item .inline-richtext {
   font-size: 15px;
-  font-weight: 600 !important;
+  font-weight: 400 !important;
   color: #2e0735;
   line-height: 1.45;
+}
+
+/* PDP — Social sharing: oculto en desktop, visible en móvil (alineado a breakpoint md del tema) */
+.section-main-product .product__block--social_sharing {
+  display: none;
+}
+
+@media (max-width: 767.98px) {
+  .section-main-product .product__block--social_sharing {
+    display: flex;
+  }
 }
 
 /* PDP — Product info card (snippet product-info-card): icono #7916AC; textos 15px; flecha fondo #EDDCEB */

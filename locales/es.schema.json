@@ -3381,6 +3381,18 @@
             },
             "enable_quick_add": {
               "label": "Habilitar el botón de agregar rápido"
+            },
+            "visibility": {
+              "label": "Visibilidad",
+              "options__mobile": {
+                "label": "Solo móvil"
+              },
+              "options__desktop": {
+                "label": "Solo escritorio"
+              },
+              "options__both": {
+                "label": "Móvil y escritorio"
+              }
             }
           }
         },

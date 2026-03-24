@@ -142,10 +142,11 @@
         "complementary": {
           "type": "complementary",
           "settings": {
-            "block_heading": "Perfect Match With",
+            "block_heading": "Combínalo con",
             "heading_size": "h4",
             "show_below_product_media": false,
             "make_collapsible_row": false,
+            "visibility": "mobile",
             "icon": "tag",
             "product_list_limit": 6,
             "layout": "grid",
@@ -243,6 +244,7 @@
         "collapsible-row-1",
         "collapsible_tab_LJEHcH",
         "divider_pPz3Kw",
+        "social_sharing",
         "sticky_atc_bar_89RrBa"
       ],
       "custom_css": [
@@ -921,7 +923,7 @@
         "section_header_alignment": "center",
         "section_header_alignment_mobile": "inherit",
         "subheading": "",
-        "heading": "You may also like",
+        "heading": "Te puede interesar",
         "highlight_style": "none",
         "highlight_font_style": "italic",
         "highlight_style_color": "",
@@ -1122,6 +1124,7 @@
   "order": [
     "breadcrumbs",
     "main",
+    "related_products_zdQ6HQ",
     "scrolling_promotion_eCxjQ7",
     "buttons_with_icon_Dy9EG6",
     "image_comparison_t8ciRn",
@@ -1130,7 +1133,6 @@
     "multicolumn_icon_C6634r",
     "multicolumn_T3qdNY",
     "video_hero_3RtzVB",
-    "related_products_zdQ6HQ",
     "collapsible_tabs_Wd4abd",
     "scrolling_gallery_image_n6qGHE"
   ]

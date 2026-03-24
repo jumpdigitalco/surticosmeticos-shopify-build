@@ -62,11 +62,39 @@
   color: var(--icon-with-text-icon, #2e0735);
 }
 
-/* PDP — Icon with text: textos de cada ítem 15px, #2E0735 */
+/* PDP — Icon with text: textos de cada ítem 15px semibold, #2E0735 */
 .section-main-product .product__block--icon-with-text .icon-with-text__item .inline-richtext {
   font-size: 15px;
+  font-weight: 600 !important;
   color: #2e0735;
   line-height: 1.45;
+}
+
+/* PDP — Product info card (snippet product-info-card): icono #7916AC; textos 15px; flecha fondo #EDDCEB */
+.section-main-product .product-info-card__icon .icon {
+  color: #7916ac;
+}
+
+.section-main-product .product-info-card__title,
+.section-main-product .product-info-card__subtitle {
+  font-size: 15px;
+}
+
+.section-main-product .product-info-card__action {
+  background-color: #eddceb;
+}
+
+.section-main-product .product-info-card__action:hover {
+  background-color: #e5d4e3;
+}
+
+/* PDP — Galería: borde de miniaturas #7916AC (incluye slide activo; el tema usa foreground en :thumb-active) */
+.section-main-product .product__media-gallery-thumbails .product__thumbs-container:after {
+  border-color: #7916ac;
+}
+
+.section-main-product .product__media-gallery-thumbails .swiper-slide.swiper-slide-thumb-active .product__thumbs-container:after {
+  border-color: #7916ac;
 }
 
 /* PDP — Títulos de acordeones (Descripción, Detalles, etc.): semibold 16px móvil / 22px desktop */
@@ -232,10 +260,15 @@
   opacity: 1;
 }
 
-/* PDP — precio con descuento: final #EE3491 20px móvil / 28px desktop Medium; tachado #949494 15px / 18px Medium */
+/* PDP — precio: semibold (600) */
+.section-main-product .product__block--price .f-price--large,
+.section-main-product .product__block--price .f-price--large .f-price-item {
+  font-weight: 600;
+}
+
+/* PDP — precio con descuento: final #EE3491 20px móvil / 28px desktop; tachado #949494 15px / 18px */
 .section-main-product .f-price--large.f-price--on-sale .f-price-item--sale {
   color: #ee3491;
-  font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
 }
@@ -249,7 +282,6 @@
 .section-main-product .f-price--large.f-price--on-sale .f-price-item--regular,
 .section-main-product .f-price--large.f-price--on-sale .f-price-item--regular s {
   color: #949494;
-  font-weight: 500;
   font-size: 15px;
   line-height: 1.2;
 }

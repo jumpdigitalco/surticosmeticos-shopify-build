@@ -53,13 +53,25 @@
           "type": "price",
           "settings": {}
         },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_type": "shopify_swatch",
+            "swatch_style": "circle",
+            "swatch_size": 32,
+            "button_style": "normal",
+            "size_title": "Tamaño",
+            "size_chart_from_page": ""
+          }
+        },
         "icon_with_text": {
           "type": "icon-with-text",
           "settings": {
             "layout": "horizontal",
             "title_font": "body-bolder",
             "title_size": "text-base",
-            "icon_color": "#EE3491",
+            "icon_color": "#ee3491",
             "icon_1": "check",
             "heading_1": "Vegano",
             "icon_2": "check",
@@ -67,6 +79,34 @@
             "icon_3": "check",
             "heading_3": "Sin crueldad"
           }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "#7916ac"
+          }
+        },
+        "icon_with_text_UAYgQU": {
+          "type": "icon-with-text",
+          "settings": {
+            "layout": "vertical",
+            "title_font": "body",
+            "title_size": "text-base",
+            "icon_color": "#2e0735",
+            "icon_1": "car-simple",
+            "heading_1": "Despachos rápidos",
+            "icon_2": "arrow-up-left",
+            "heading_2": "Cambios sin complicaciones",
+            "icon_3": "star-four",
+            "heading_3": ""
+          }
+        },
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "settings": {}
         },
         "inventory": {
           "type": "inventory",
@@ -84,59 +124,6 @@
             "subheading": "Usualmente listo en 24 horas",
             "link": "",
             "link_new_tab": false
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "picker_type": "button",
-            "swatch_type": "shopify_swatch",
-            "swatch_style": "circle",
-            "swatch_size": 32,
-            "button_style": "normal",
-            "size_title": "Tamaño",
-            "size_chart_from_page": ""
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_quantity_selector": true,
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": false,
-            "atc_button_background": "#7916AC"
-          }
-        },
-        "icon_with_text_UAYgQU": {
-          "type": "icon-with-text",
-          "settings": {
-            "layout": "vertical",
-            "title_font": "body",
-            "title_size": "text-base",
-            "icon_color": "#EE3491",
-            "icon_1": "car-simple",
-            "heading_1": "Despachos rápidos",
-            "icon_2": "arrow-up-left",
-            "heading_2": "Cambios sin complicaciones",
-            "icon_3": "star-four",
-            "heading_3": ""
-          }
-        },
-        "pickup_availability": {
-          "type": "pickup_availability",
-          "settings": {}
-        },
-        "promotion_alert_L7ipQp": {
-          "type": "promotion_alert",
-          "settings": {
-            "text_color": "#0d8756",
-            "icon": "lightning",
-            "heading": "Limited time offer",
-            "description": "<p>Don’t miss out on this limited-time advantage crafted for you</p>"
           }
         },
         "complementary": {
@@ -176,33 +163,6 @@
             "content": "<p>Our cosmetic products are crafted with a blend of nourishing and effective ingredients designed to enhance your beauty and care for your skin. Key components include:</p><ul><li><strong>Aloe Vera Extract:</strong> Known for its soothing and moisturizing properties, it helps to hydrate the skin and reduce irritation.</li><li><strong>Shea Butter:</strong> Rich in vitamins and fatty acids, shea butter provides deep nourishment and creates a protective barrier on the skin.</li><li><strong>Hyaluronic Acid:</strong> A powerful humectant that attracts and retains moisture, keeping the skin plump and hydrated.</li><li><strong>Vitamin E:</strong> An antioxidant that helps to protect the skin from environmental stressors and promotes a healthy glow.</li><li><strong>Natural Oils (e.g., Jojoba Oil, Argan Oil):</strong> These oils are rich in essential fatty acids and vitamins, offering hydration and improving skin texture.</li></ul><p>Each ingredient is carefully selected to ensure our products are effective, safe, and suitable for a variety of skin types.</p>",
             "page": "",
             "default_open": false,
-            "show_below_product_media": true
-          }
-        },
-        "collapsible_tab_piweU8": {
-          "type": "collapsible_tab",
-          "settings": {
-            "heading": "Shipping & Return",
-            "heading_size": "h4",
-            "icon": "none",
-            "content": "<p>Once we receive your return, we’ll process your refund within 5-7 business days. Refunds will be credited back to your original payment method. For more details on how to start a return, visit our Returns page or contact our support team—we’re here to help! Shop confidently knowing we’ve got you covered.</p>",
-            "page": "",
-            "default_open": false,
-            "show_below_product_media": true
-          }
-        },
-        "payment_info": {
-          "type": "payment_info",
-          "settings": {
-            "color_scheme": "scheme-774054da-3582-4852-b955-9e3b5fa1cdcd",
-            "heading": "Payment & Security",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h5",
-            "description": "<p>Your payment information is processed securely. We do not store credit card details nor have access to your credit card information.</p>",
-            "show_payment_icons": true,
             "show_below_product_media": true
           }
         },
@@ -264,9 +224,39 @@
         "padding_bottom": 60
       }
     },
+    "related_products_zdQ6HQ": {
+      "type": "related-products",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "section_header_alignment": "center",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "Te puede interesar",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h2",
+        "description": "",
+        "limit": 8,
+        "columns": 5,
+        "column_gap": "2xs",
+        "row_gap": "inherit",
+        "enable_slider": true,
+        "navigation_position": "bottom",
+        "pcard_image_ratio": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "show_progress_bar": true,
+        "padding_top": 60,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
     "scrolling_promotion_eCxjQ7": {
       "type": "scrolling-promotion",
-      "disabled": true,
       "blocks": {
         "text_DWxYna": {
           "type": "text",
@@ -307,6 +297,7 @@
         "text_NfngCj",
         "text_qtTMwc"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-4",
         "direction": "left",
@@ -320,7 +311,6 @@
     },
     "buttons_with_icon_Dy9EG6": {
       "type": "buttons-with-icon",
-      "disabled": true,
       "blocks": {
         "button_item_RVYpWe": {
           "type": "button_item",
@@ -361,6 +351,7 @@
         "button_item_LynLtk",
         "button_item_yeTw9J"
       ],
+      "disabled": true,
       "custom_css": [
         ".section__header--text {max-width: 56rem;}"
       ],
@@ -378,6 +369,7 @@
         "heading_size": "h1",
         "item_alignment": "center",
         "item_button_style": "btn--icon",
+        "item_button_font": "button",
         "enable_slider": true,
         "swipe_on_mobile": true,
         "show_section_divider": false,
@@ -388,7 +380,6 @@
     },
     "image_comparison_t8ciRn": {
       "type": "image-comparison",
-      "disabled": true,
       "blocks": {
         "image_c7peJH": {
           "type": "image",
@@ -435,6 +426,7 @@
         "text_XpqWbH",
         "text_ziRiRr"
       ],
+      "disabled": true,
       "custom_css": [
         ".section__header {max-width: 45rem;}"
       ],
@@ -459,6 +451,7 @@
         "direction": "horizontal",
         "image_height": "medium",
         "image_heading_style": "badge",
+        "product": "",
         "padding_top": 60,
         "padding_bottom": 60,
         "show_section_divider": false,
@@ -467,51 +460,60 @@
     },
     "testimonials_8JHr3L": {
       "type": "testimonials",
-      "disabled": true,
       "blocks": {
         "testimonial_4nXcQ7": {
           "type": "testimonial",
           "settings": {
+            "icon": "none",
             "heading": "Testimonials",
             "text": "<p>“This was a great way for me to try Osea products for the first time and I highly recommend all of them. They work well and I will be repurchasing.”</p>",
             "author": "Jenny W.",
-            "bio": "Verified Buyer"
+            "bio": "Verified Buyer",
+            "product": ""
           }
         },
         "testimonial_pNihpA": {
           "type": "testimonial",
           "settings": {
+            "icon": "none",
             "heading": "Testimonials",
             "text": "<p>“The story behind, and sustainable production, and the feeling of no risk with the free return information.”</p>",
             "author": "Stephanie",
-            "bio": "Verified Buyer"
+            "bio": "Verified Buyer",
+            "product": ""
           }
         },
         "testimonial_dPMfPd": {
           "type": "testimonial",
           "settings": {
+            "icon": "none",
             "heading": "Testimonials",
             "text": "<p>“High-quality furniture, crafted with passion and care, fantastic in appearance and use, reasonably priced, and excellent custome.”</p>",
             "author": "Rachel",
-            "bio": "Verified Buyer"
+            "bio": "Verified Buyer",
+            "product": ""
           }
         },
         "testimonial_CXAGMb": {
           "type": "testimonial",
           "settings": {
+            "icon": "none",
             "heading": "Testimonials",
             "text": "<p>“I have always loved the brand Innersense Organic Beauty, but I struggled to find products among their hair baths”</p>",
             "author": "Emily A.",
-            "bio": "Verified Buyer"
+            "bio": "Verified Buyer",
+            "product": ""
           }
         },
         "testimonial_VGKneP": {
           "type": "testimonial",
           "settings": {
+            "icon": "none",
             "heading": "Testimonials",
             "text": "<p>“This face wash has been a part of my daily routine for a bit now, and it's been a remarkable addition that has significantly improved my skin!”</p>",
             "author": "Cooper",
-            "bio": "Verified Buyer"
+            "bio": "Verified Buyer",
+            "product": ""
           }
         }
       },
@@ -522,6 +524,7 @@
         "testimonial_CXAGMb",
         "testimonial_VGKneP"
       ],
+      "disabled": true,
       "settings": {
         "container": "fixed",
         "color_scheme": "scheme-6",
@@ -552,6 +555,7 @@
         "enable_slider": true,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
+        "show_progress_bar": true,
         "padding_top": 60,
         "padding_bottom": 60,
         "show_section_divider": false,
@@ -560,7 +564,6 @@
     },
     "image_with_text_iLRDCn": {
       "type": "image-with-text",
-      "disabled": true,
       "blocks": {
         "subheading_kLkUeF": {
           "type": "subheading",
@@ -590,6 +593,7 @@
           "type": "button",
           "settings": {
             "button_label": "Learn More",
+            "button_link": "",
             "button_style": "btn--primary",
             "button_icon": "none"
           }
@@ -601,6 +605,7 @@
         "text_7wx8EH",
         "button_qKLmEg"
       ],
+      "disabled": true,
       "custom_css": [
         "@media (min-width: 1280px) {.image-with-text__content {max-width: 50rem; }}"
       ],
@@ -620,7 +625,6 @@
     },
     "multicolumn_icon_C6634r": {
       "type": "multicolumn-icon",
-      "disabled": true,
       "blocks": {
         "column_RyfyAc": {
           "type": "column",
@@ -713,6 +717,7 @@
         "column_yqB7VU",
         "column_xWb4w6"
       ],
+      "disabled": true,
       "settings": {
         "container": "fixed",
         "color_scheme": "scheme-1",
@@ -751,7 +756,6 @@
     },
     "multicolumn_T3qdNY": {
       "type": "multicolumn",
-      "disabled": true,
       "blocks": {
         "column_M9r9TM": {
           "type": "column",
@@ -828,6 +832,7 @@
         "column_9EKQhM",
         "column_pRtbdH"
       ],
+      "disabled": true,
       "settings": {
         "container": "fixed",
         "color_scheme": "",
@@ -862,7 +867,6 @@
     },
     "video_hero_3RtzVB": {
       "type": "video-hero",
-      "disabled": true,
       "blocks": {
         "subheading_jJnkgM": {
           "type": "subheading",
@@ -885,6 +889,7 @@
           "type": "button",
           "settings": {
             "button_label": "Learn More",
+            "button_link": "",
             "button_style": "btn--primary",
             "button_icon": "none"
           }
@@ -895,11 +900,13 @@
         "heading_h4EFea",
         "button_yQCmeC"
       ],
+      "disabled": true,
       "custom_css": [
         ".video-hero__content-wrapper {max-width: 48rem;}"
       ],
       "settings": {
         "container": "fixed",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
         "video_height": "adapt",
         "overlay_opacity": 20,
@@ -915,39 +922,8 @@
         "divider_width": "fixed"
       }
     },
-    "related_products_zdQ6HQ": {
-      "type": "related-products",
-      "settings": {
-        "container": "fixed",
-        "color_scheme": "",
-        "section_header_alignment": "center",
-        "section_header_alignment_mobile": "inherit",
-        "subheading": "",
-        "heading": "Te puede interesar",
-        "highlight_style": "none",
-        "highlight_font_style": "italic",
-        "highlight_style_color": "",
-        "highlight_text_color": "",
-        "heading_size": "h2",
-        "description": "",
-        "limit": 8,
-        "columns": 5,
-        "column_gap": "2xs",
-        "row_gap": "inherit",
-        "enable_slider": true,
-        "navigation_position": "bottom",
-        "pcard_image_ratio": "",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 60,
-        "padding_bottom": 0,
-        "show_section_divider": false,
-        "divider_width": "fixed"
-      }
-    },
     "collapsible_tabs_Wd4abd": {
       "type": "collapsible-tabs",
-      "disabled": true,
       "blocks": {
         "collapsible_item_b8cktj": {
           "type": "collapsible_item",
@@ -1004,6 +980,7 @@
         "collapsible_item_7yt9ir",
         "collapsible_item_XeTJaY"
       ],
+      "disabled": true,
       "settings": {
         "container": "narrow",
         "color_scheme": "",
@@ -1038,7 +1015,6 @@
     },
     "scrolling_gallery_image_n6qGHE": {
       "type": "scrolling-gallery-image",
-      "disabled": true,
       "blocks": {
         "gallery_fnCyMU": {
           "type": "gallery",
@@ -1093,6 +1069,7 @@
         "gallery_kKyW3w",
         "gallery_rVVpjL"
       ],
+      "disabled": true,
       "settings": {
         "color_scheme": "scheme-3",
         "section_header_alignment": "center",
@@ -1108,6 +1085,7 @@
         "text_size": "text-base",
         "show_button_on_top": false,
         "button_label": "@ceramide_cosmetic",
+        "button_link": "",
         "button_style": "btn--underline",
         "button_icon": "none",
         "direction": "left",

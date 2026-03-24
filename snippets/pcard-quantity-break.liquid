@@ -57,13 +57,9 @@
             <ul class="list-unstyled">
               <li>
                 <span>{{ selected_variant.quantity_rule.min }}+</span>
-                {%- liquid 
-                  if settings.currency_code_enabled
-                    assign price = selected_variant.price | money_with_currency
-                  else
-                    assign price = selected_variant.price | money
-                  endif
-                -%}
+                {%- capture price -%}
+                  {%- render 'money-format', amount: selected_variant.price -%}
+                {%- endcapture -%}
                 <span> {{ 'sections.quick_order_list.each' | t: money: price }}</span>
               </li>
               {%- for price_break in selected_variant.quantity_price_breaks -%}
@@ -72,13 +68,9 @@
                     {{- price_break.minimum_quantity -}}
                     <span aria-hidden="true">+</span>
                   </span>
-                  {%- liquid 
-                    if settings.currency_code_enabled
-                      assign price_break_price = price_break.price | money_with_currency
-                    else
-                      assign price_break_price = price_break.price | money
-                    endif
-                  -%}
+                  {%- capture price_break_price -%}
+                    {%- render 'money-format', amount: price_break.price -%}
+                  {%- endcapture -%}
                   <span>{{ 'sections.quick_order_list.each' | t: money: price_break_price }}</span>
                 </li>
               {%- endfor -%}

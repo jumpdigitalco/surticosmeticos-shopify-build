@@ -198,6 +198,7 @@
                           >
                             {% render 'icon-with-text',
                               layout: 'vertical',
+                              icon_color: block.settings.icon_color,
                               heading_1: block.settings.heading_1,
                               image_1: block.settings.image_1,
                               icon_1: block.settings.icon_1,
@@ -701,6 +702,13 @@
             }
           ],
           "default": "none"
+        },
+        {
+          "type": "color",
+          "id": "icon_color",
+          "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_color.label",
+          "info": "t:sections.main-product.blocks.icon_with_text.settings.icon_color.info",
+          "default": "#EE3491"
         },
         {
           "type": "header",

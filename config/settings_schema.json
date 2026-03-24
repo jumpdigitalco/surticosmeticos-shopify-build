@@ -1892,6 +1892,13 @@
         "id": "currency_code_enabled",
         "label": "t:settings_schema.currency_format.settings.currency_code_enabled.label",
         "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "currency_hide_trailing_zeros",
+        "label": "t:settings_schema.currency_format.settings.currency_hide_trailing_zeros.label",
+        "default": true,
+        "info": "t:settings_schema.currency_format.settings.currency_hide_trailing_zeros.info"
       }
     ]
   }

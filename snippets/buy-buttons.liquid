@@ -20,11 +20,17 @@
     if block.settings.show_dynamic_checkout and gift_card_recipient_feature_active == false
       assign show_dynamic_checkout = true
     endif
+
+    assign atc_btn_bg = '#7916AC'
+    if block.settings.atc_button_background != blank
+      assign atc_btn_bg = block.settings.atc_button_background
+    endif
   -%}
   <div
     class="product-form"
     data-hide-errors="{{ gift_card_recipient_feature_active }}"
     data-section-id="{{ section.id }}"
+    style="--product-atc-btn-bg: {{ atc_btn_bg }};"
   >
     <div class="product-form__error-message-wrapper" role="alert" hidden>
       <svg
@@ -146,39 +152,25 @@
                     {%- if variant_price_compare -%}
                       <span class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</span>
                       <span class="inline-flex items-center h-auto relative">
-                        {%- liquid
-                          if settings.currency_code_enabled
-                            echo variant_price_compare | money_with_currency
-                          else
-                            echo variant_price_compare | money
-                          endif
-                        -%}
+                        {%- render 'money-format', amount: variant_price_compare -%}
                       </span>
                       <span class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</span>
                     {%- endif -%}
 
                     {%- if product.selected_or_first_available_variant.quantity_price_breaks.size > 0 -%}
                       {%- if current_qty_for_volume_pricing < volume_pricing_array.last.minimum_quantity -%}
-                        {%- liquid
-                          if settings.currency_code_enabled
-                            assign variant_price = product.selected_or_first_available_variant.price | money_with_currency
-                          else
-                            assign variant_price = product.selected_or_first_available_variant.price | money
-                          endif
-                        -%}
+                        {%- capture variant_price -%}
+                          {%- render 'money-format', amount: product.selected_or_first_available_variant.price -%}
+                        {%- endcapture -%}
                         <span class="price-per-item--current price__regular whitespace-nowrap">
                           {{- 'products.product.volume_pricing.price_at_each' | t: price: variant_price -}}
                         </span>
                       {%- else -%}
                         {%- for price_break in volume_pricing_array -%}
                           {%- if current_qty_for_volume_pricing >= price_break.minimum_quantity -%}
-                            {%- liquid
-                              if settings.currency_code_enabled
-                                assign price_break_price = price_break.price | money_with_currency
-                              else
-                                assign price_break_price = price_break.price | money
-                              endif
-                            -%}
+                            {%- capture price_break_price -%}
+                              {%- render 'money-format', amount: price_break.price -%}
+                            {%- endcapture -%}
                             <span class="price-per-item--current price__regular whitespace-nowrap">
                               {{- 'products.product.volume_pricing.price_at_each' | t: price: price_break_price -}}
                             </span>
@@ -188,13 +180,9 @@
                       {%- endif -%}
                     {%- else -%}
                       <span class="price-per-item--current price__regular whitespace-nowrap">
-                        {%- liquid
-                          if settings.currency_code_enabled
-                            assign variant_price = product.selected_or_first_available_variant.price | money_with_currency
-                          else
-                            assign variant_price = product.selected_or_first_available_variant.price | money
-                          endif
-                        -%}
+                        {%- capture variant_price -%}
+                          {%- render 'money-format', amount: product.selected_or_first_available_variant.price -%}
+                        {%- endcapture -%}
                         {{- 'products.product.volume_pricing.price_at_each' | t: price: variant_price -}}
                       </span>
                     {%- endif -%}
@@ -241,25 +229,17 @@
                 <ul class="list-unstyled">
                   <li class="blocks-radius-md">
                     <span>{{ product.selected_or_first_available_variant.quantity_rule.min }}+</span>
-                    {%- liquid
-                      if settings.currency_code_enabled
-                        assign price = product.selected_or_first_available_variant.price | money_with_currency
-                      else
-                        assign price = product.selected_or_first_available_variant.price | money
-                      endif
-                    -%}
+                    {%- capture price -%}
+                      {%- render 'money-format', amount: product.selected_or_first_available_variant.price -%}
+                    {%- endcapture -%}
                     <span data-text="{{ 'products.product.volume_pricing.price_at_each' | t: price: price }}">
                       {{- 'products.product.volume_pricing.each' | t: money: price -}}
                     </span>
                   </li>
                   {%- for price_break in product.selected_or_first_available_variant.quantity_price_breaks -%}
-                    {%- liquid
-                      if settings.currency_code_enabled
-                        assign price_break_price = price_break.price | money_with_currency
-                      else
-                        assign price_break_price = price_break.price | money
-                      endif
-                    -%}
+                    {%- capture price_break_price -%}
+                      {%- render 'money-format', amount: price_break.price -%}
+                    {%- endcapture -%}
                     <li class="blocks-radius-md{% if forloop.index >= 3 %} show-more-item hidden{% endif %}">
                       <span>
                         {{- price_break.minimum_quantity -}}

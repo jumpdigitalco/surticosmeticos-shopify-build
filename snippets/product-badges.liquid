@@ -59,6 +59,7 @@
     {%- liquid
       assign sale_badge = ''
       assign amount = 0
+      assign savings_amount = 0
 
       case block.settings.sale_badge_type
         when 'percentage'
@@ -68,13 +69,16 @@
           assign sale_badge = 'products.product.price.save_price_html' | t: amount: amount
         when 'fixed_amount'
           if compare_at_price > price
-            assign amount = compare_at_price | minus: price | money
+            assign savings_amount = compare_at_price | minus: price
           endif
-          assign sale_badge = 'products.product.price.save_price_html' | t: amount: amount
         else
           assign sale_badge = 'products.product.on_sale' | t
       endcase
     -%}
+    {%- if block.settings.sale_badge_type == 'fixed_amount' and compare_at_price > price -%}
+      {%- capture amount -%}{%- render 'money-format', amount: savings_amount -%}{%- endcapture -%}
+      {%- assign sale_badge = 'products.product.price.save_price_html' | t: amount: amount -%}
+    {%- endif -%}
     <span class="f-badge f-badge--sale">{{ sale_badge }}</span>
   {%- endif -%}
 {%- else -%}

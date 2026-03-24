@@ -22,10 +22,10 @@
         {%- render 'loading-spinner' -%}
       </div>
       <label for="GiftWrap-{{ section.id }}" class="cursor-pointer">
-        {%- liquid
-          assign gift_price = gift_wrapping.object.price | money
-          echo 'general.cart.gift_wrapping.message_html' | t: price: gift_price
-        -%}
+        {%- capture gift_price -%}
+          {%- render 'money-format', amount: gift_wrapping.object.price -%}
+        {%- endcapture -%}
+        {{- 'general.cart.gift_wrapping.message_html' | t: price: gift_price -}}
       </label>
     </div>
     {%- if cart.attributes['gift-wrapping'] -%}

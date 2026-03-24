@@ -43,7 +43,7 @@
           "type": "meta",
           "settings": {
             "link_color": "#072835",
-            "show_vendor": true,
+            "show_vendor": false,
             "show_product_type": true,
             "show_sku": false,
             "show_barcode": false
@@ -59,12 +59,13 @@
             "layout": "horizontal",
             "title_font": "body-bolder",
             "title_size": "text-base",
+            "icon_color": "#EE3491",
             "icon_1": "check",
-            "heading_1": "Vegan",
+            "heading_1": "Vegano",
             "icon_2": "check",
-            "heading_2": "Gluten Free",
+            "heading_2": "Sin gluten",
             "icon_3": "check",
-            "heading_3": "Cluelty Free"
+            "heading_3": "Sin crueldad"
           }
         },
         "inventory": {
@@ -73,6 +74,15 @@
             "text_style": "body",
             "inventory_threshold": 10,
             "show_inventory_quantity": true
+          }
+        },
+        "product_info_card_store": {
+          "type": "product_info_card",
+          "settings": {
+            "heading": "Recogida en tienda",
+            "subheading": "Usualmente listo en 24 horas",
+            "link": "",
+            "link_new_tab": false
           }
         },
         "description": {
@@ -87,7 +97,7 @@
             "swatch_style": "circle",
             "swatch_size": 32,
             "button_style": "normal",
-            "size_title": "Size",
+            "size_title": "Tamaño",
             "size_chart_from_page": ""
           }
         },
@@ -95,8 +105,9 @@
           "type": "buy_buttons",
           "settings": {
             "show_quantity_selector": true,
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "#7916AC"
           }
         },
         "icon_with_text_UAYgQU": {
@@ -105,10 +116,11 @@
             "layout": "vertical",
             "title_font": "body",
             "title_size": "text-base",
+            "icon_color": "#EE3491",
             "icon_1": "car-simple",
-            "heading_1": "Free International Shipping over $120",
+            "heading_1": "Despachos rápidos",
             "icon_2": "arrow-up-left",
-            "heading_2": "Free Returns Within 30 days",
+            "heading_2": "Cambios sin complicaciones",
             "icon_3": "star-four",
             "heading_3": ""
           }
@@ -144,19 +156,19 @@
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Specifications",
+            "heading": "Descripción",
             "heading_size": "h4",
             "icon": "none",
             "content": "",
             "page": "product-content",
-            "default_open": true,
+            "default_open": false,
             "show_below_product_media": true
           }
         },
         "collapsible_tab_LJEHcH": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Ingredients",
+            "heading": "Detalles",
             "heading_size": "h4",
             "icon": "none",
             "content": "<p>Our cosmetic products are crafted with a blend of nourishing and effective ingredients designed to enhance your beauty and care for your skin. Key components include:</p><ul><li><strong>Aloe Vera Extract:</strong> Known for its soothing and moisturizing properties, it helps to hydrate the skin and reduce irritation.</li><li><strong>Shea Butter:</strong> Rich in vitamins and fatty acids, shea butter provides deep nourishment and creates a protective barrier on the skin.</li><li><strong>Hyaluronic Acid:</strong> A powerful humectant that attracts and retains moisture, keeping the skin plump and hydrated.</li><li><strong>Vitamin E:</strong> An antioxidant that helps to protect the skin from environmental stressors and promotes a healthy glow.</li><li><strong>Natural Oils (e.g., Jojoba Oil, Argan Oil):</strong> These oils are rich in essential fatty acids and vitamins, offering hydration and improving skin texture.</li></ul><p>Each ingredient is carefully selected to ensure our products are effective, safe, and suitable for a variety of skin types.</p>",
@@ -219,21 +231,17 @@
         "title",
         "meta",
         "price",
-        "icon_with_text",
-        "inventory",
-        "description",
         "variant_picker",
+        "icon_with_text",
         "buy_buttons",
         "icon_with_text_UAYgQU",
         "pickup_availability",
-        "promotion_alert_L7ipQp",
+        "inventory",
+        "product_info_card_store",
         "complementary",
         "collapsible-row-1",
         "collapsible_tab_LJEHcH",
-        "collapsible_tab_piweU8",
-        "payment_info",
         "divider_pPz3Kw",
-        "social_sharing",
         "sticky_atc_bar_89RrBa"
       ],
       "custom_css": [
@@ -255,6 +263,7 @@
     },
     "scrolling_promotion_eCxjQ7": {
       "type": "scrolling-promotion",
+      "disabled": true,
       "blocks": {
         "text_DWxYna": {
           "type": "text",
@@ -308,6 +317,7 @@
     },
     "buttons_with_icon_Dy9EG6": {
       "type": "buttons-with-icon",
+      "disabled": true,
       "blocks": {
         "button_item_RVYpWe": {
           "type": "button_item",
@@ -375,6 +385,7 @@
     },
     "image_comparison_t8ciRn": {
       "type": "image-comparison",
+      "disabled": true,
       "blocks": {
         "image_c7peJH": {
           "type": "image",
@@ -453,6 +464,7 @@
     },
     "testimonials_8JHr3L": {
       "type": "testimonials",
+      "disabled": true,
       "blocks": {
         "testimonial_4nXcQ7": {
           "type": "testimonial",
@@ -545,6 +557,7 @@
     },
     "image_with_text_iLRDCn": {
       "type": "image-with-text",
+      "disabled": true,
       "blocks": {
         "subheading_kLkUeF": {
           "type": "subheading",
@@ -604,6 +617,7 @@
     },
     "multicolumn_icon_C6634r": {
       "type": "multicolumn-icon",
+      "disabled": true,
       "blocks": {
         "column_RyfyAc": {
           "type": "column",
@@ -734,6 +748,7 @@
     },
     "multicolumn_T3qdNY": {
       "type": "multicolumn",
+      "disabled": true,
       "blocks": {
         "column_M9r9TM": {
           "type": "column",
@@ -844,6 +859,7 @@
     },
     "video_hero_3RtzVB": {
       "type": "video-hero",
+      "disabled": true,
       "blocks": {
         "subheading_jJnkgM": {
           "type": "subheading",
@@ -928,6 +944,7 @@
     },
     "collapsible_tabs_Wd4abd": {
       "type": "collapsible-tabs",
+      "disabled": true,
       "blocks": {
         "collapsible_item_b8cktj": {
           "type": "collapsible_item",
@@ -1018,6 +1035,7 @@
     },
     "scrolling_gallery_image_n6qGHE": {
       "type": "scrolling-gallery-image",
+      "disabled": true,
       "blocks": {
         "gallery_fnCyMU": {
           "type": "gallery",

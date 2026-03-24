@@ -184,6 +184,9 @@ product-info.use-color-scheme-in-container > .product {
 .product__block--buy_buttons + .product__block--pickup_availability {
   margin-top: -1.2rem;
 }
+.product__block--inventory + .product__block--product_info_card {
+  margin-top: 0.8rem;
+}
 .product__block--pickup_availability + .product__block--collapsible_tab {
   margin-top: -2rem;
 }

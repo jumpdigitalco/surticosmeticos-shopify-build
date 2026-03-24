@@ -1,9 +1,10 @@
 {%- liquid
   assign minimum_amount_in_cents = minimum_amount | plus: 0
   assign total_price = cart.total_price | plus: 0
+  assign left_to_spend_amount = limit_currency | minus: cart.total_price
 -%}
 {%- capture left_to_spend -%}
-    <strong data-left-to-spend>{{ limit_currency | minus: cart.total_price | money }}</strong>
+    <strong data-left-to-spend>{%- render 'money-format', amount: left_to_spend_amount -%}</strong>
 {%- endcapture -%}
 <free-shipping-goal
   data-cart-total="{{ total_price }}"

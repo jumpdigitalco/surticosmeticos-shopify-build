@@ -2240,6 +2240,10 @@
         "paragraph": "Los precios del carrito y del pago siempre muestran códigos de moneda. Ejemplo: $1.00 USD.",
         "currency_code_enabled": {
           "label": "Mostrar códigos de moneda"
+        },
+        "currency_hide_trailing_zeros": {
+          "label": "Ocultar decimales finales en precios",
+          "info": "Muestra precios como $19 en lugar de $19,00 cuando la parte decimal es cero."
         }
       }
     }
@@ -3308,6 +3312,10 @@
             "show_gift_card_recipient": {
               "label": "Mostrar formulario de información del destinatario para tarjetas de regalo",
               "info": "Permite a los compradores enviar tarjetas de regalo en una fecha programada junto con un mensaje personal. [Más información](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
+            },
+            "atc_button_background": {
+              "label": "Fondo del botón Agregar al carrito",
+              "info": "Color de fondo del botón principal de agregar al carrito en la ficha de producto."
             }
           }
         },
@@ -3399,6 +3407,10 @@
             },
             "heading": {
               "info": "Deje la etiqueta del encabezado en blanco para ocultar la columna de iconos."
+            },
+            "icon_color": {
+              "label": "Color del icono",
+              "info": "Se aplica a iconos SVG (no a imágenes subidas). Puedes cambiarlo desde aquí; por defecto se usa #EE3491."
             }
           }
         },

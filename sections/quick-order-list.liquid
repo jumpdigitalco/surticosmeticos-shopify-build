@@ -125,7 +125,8 @@
                   <div class="totals__product-total flex items-center justify-between gap-3">
                     <p class="totals__subtotal h5">{{ 'sections.quick_order_list.product_total' | t }}</p>
                     <span class="totals__subtotal-value font-body-bolder h5">
-                      {{ cart | line_items_for: product | sum: 'original_line_price' | money }}
+                      {%- assign _qol_product_total = cart | line_items_for: product | sum: 'original_line_price' -%}
+                      {%- render 'money-format', amount: _qol_product_total -%}
                     </span>
                   </div>
                   <small class="tax-note text-subtext rte">

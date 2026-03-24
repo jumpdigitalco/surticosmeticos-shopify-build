@@ -222,7 +222,9 @@
             assign step_value = max_value | minus: min_value | divided_by: 100.0 | ceil | at_most: 1
             assign lower_progress_limit = min_value | divided_by: range_max | times: 100.0
             assign higher_progress_limit = max_value | divided_by: range_max | times: 100.0
-            assign highest_price = filter.range_max | money
+            capture highest_price
+              render 'money-format', amount: filter.range_max
+            endcapture
           -%}
           <details
             is="accordion-details"

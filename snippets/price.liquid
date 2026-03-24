@@ -37,14 +37,11 @@
   endif
 
   assign available = target.available | default: false
-  assign money_price = price | money
-  assign money_price_min = price_min | money
-  assign money_price_max = price_max | money
-  if settings.currency_code_enabled
-    assign money_price = price | money_with_currency
-    assign money_price_min = price_min | money_with_currency
-    assign money_price_max = price_max | money_with_currency
-  endif
+-%}
+{%- capture money_price -%}{%- render 'money-format', amount: price -%}{%- endcapture -%}
+{%- capture money_price_min -%}{%- render 'money-format', amount: price_min -%}{%- endcapture -%}
+{%- capture money_price_max -%}{%- render 'money-format', amount: price_max -%}{%- endcapture -%}
+{%- liquid
   if target == product and product.price_varies
     assign money_price = 'products.product.price.from_price_html' | t: price: money_price
   endif
@@ -95,11 +92,7 @@
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.regular_price' | t }}</span>
       <span class="f-price-item f-price-item--regular">
         <s>
-          {% if settings.currency_code_enabled %}
-            {{ compare_at_price | money_with_currency }}
-          {% else %}
-            {{ compare_at_price | money }}
-          {% endif %}
+          {%- render 'money-format', amount: compare_at_price -%}
         </s>
       </span>
     {%- endunless -%}
@@ -120,7 +113,7 @@
             {%- endif -%}
           </span>
       {%- endcapture -%}
-      <span data-unit-price>{{ selected_variant.unit_price | money }}</span>
+      <span data-unit-price>{%- render 'money-format', amount: selected_variant.unit_price -%}</span>
       {{- unit_price_separator -}}
       {{- unit_price_base_unit -}}
     </div>

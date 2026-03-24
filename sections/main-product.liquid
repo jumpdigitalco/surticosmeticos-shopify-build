@@ -461,6 +461,13 @@
           "default": true,
           "label": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.label",
           "info": "t:sections.main-product.blocks.buy_buttons.settings.show_gift_card_recipient.info"
+        },
+        {
+          "type": "color",
+          "id": "atc_button_background",
+          "label": "t:sections.main-product.blocks.buy_buttons.settings.atc_button_background.label",
+          "info": "t:sections.main-product.blocks.buy_buttons.settings.atc_button_background.info",
+          "default": "#7916AC"
         }
       ]
     },
@@ -468,6 +475,36 @@
       "type": "pickup_availability",
       "name": "t:sections.main-product.blocks.pickup_availability.name",
       "limit": 1
+    },
+    {
+      "type": "product_info_card",
+      "name": "Product info card",
+      "limit": 1,
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Recogida en tienda"
+        },
+        {
+          "type": "text",
+          "id": "subheading",
+          "label": "Subheading",
+          "default": "Usualmente listo en 24 horas"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link (optional)"
+        },
+        {
+          "type": "checkbox",
+          "id": "link_new_tab",
+          "label": "Open link in new tab",
+          "default": false
+        }
+      ]
     },
     {
       "type": "description",
@@ -1056,6 +1093,13 @@
             }
           ],
           "default": "h5"
+        },
+        {
+          "type": "color",
+          "id": "icon_color",
+          "label": "t:sections.main-product.blocks.icon_with_text.settings.icon_color.label",
+          "info": "t:sections.main-product.blocks.icon_with_text.settings.icon_color.info",
+          "default": "#EE3491"
         },
         {
           "type": "header",

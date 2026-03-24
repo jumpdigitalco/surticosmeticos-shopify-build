@@ -2240,6 +2240,10 @@
         "paragraph": "Cart and checkout prices always show currency codes. Example: $1.00 USD.",
         "currency_code_enabled": {
           "label": "Show currency codes"
+        },
+        "currency_hide_trailing_zeros": {
+          "label": "Hide trailing zeros in prices",
+          "info": "Shows prices like $19 instead of $19.00 when the fractional part is zero."
         }
       }
     }
@@ -3308,6 +3312,10 @@
             "show_gift_card_recipient": {
               "label": "Show recipient information form for gift cards",
               "info": "Allows buyers to send gift cards on a scheduled date along with a personal message. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/add-gift-card-recipient-fields)"
+            },
+            "atc_button_background": {
+              "label": "Add to cart button background",
+              "info": "Background color for the main Add to cart button on the product form."
             }
           }
         },
@@ -3399,6 +3407,10 @@
             },
             "heading": {
               "info": "Leave the heading label blank to hide the icon column."
+            },
+            "icon_color": {
+              "label": "Icon color",
+              "info": "Applies to SVG icons (not uploaded images). Use the theme default or set a custom color."
             }
           }
         },

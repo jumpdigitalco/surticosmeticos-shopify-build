@@ -411,6 +411,10 @@
           <div class="{{ block_classes }}" {{ additional_attributes }} {{ block.shopify_attributes }}>
             {%- render 'product-pickup-availability', product: product -%}
           </div>
+        {%- when 'product_info_card' -%}
+          <div class="{{ block_classes }}" {{ additional_attributes }} {{ block.shopify_attributes }}>
+            {%- render 'product-info-card', block: block -%}
+          </div>
         {%- when 'badges' -%}
           <div
             class="{{ block_classes }} product__badges flex flex-wrap items-center"
@@ -464,6 +468,7 @@
               layout: block.settings.layout,
               title_size: block.settings.title_size,
               title_font: block.settings.title_font,
+              icon_color: block.settings.icon_color,
               heading_1: block.settings.heading_1,
               image_1: block.settings.image_1,
               icon_1: block.settings.icon_1,

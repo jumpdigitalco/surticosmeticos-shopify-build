@@ -118,7 +118,7 @@
                               {% render 'icon-discount' %}
                               <span>
                                 {{- discount_allocation.discount_application.title }} (-
-                                {{- discount_allocation.amount | money -}}
+                                {%- render 'money-format', amount: discount_allocation.amount -%}
                                 )</span
                               >
                             </li>
@@ -167,20 +167,20 @@
                             <span class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</span>
                           </dt>
                           <dd class="regular-price m-0">
-                            <s>{{ line_item.original_price | money }}</s>
+                            <s>{%- render 'money-format', amount: line_item.original_price -%}</s>
                           </dd>
                           <dt>
                             <span class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</span>
                           </dt>
                           <dd class="m-0">
-                            <span>{{ line_item.final_price | money }}</span>
+                            <span>{%- render 'money-format', amount: line_item.final_price -%}</span>
                           </dd>
                         {%- else -%}
                           <dt>
                             <span class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</span>
                           </dt>
                           <dd class="m-0">
-                            {{ line_item.original_price | money }}
+                            {%- render 'money-format', amount: line_item.original_price -%}
                           </dd>
                         {%- endif -%}
                         {%- if line_item.unit_price_measurement -%}
@@ -199,7 +199,7 @@
                               {%- endif -%}
                               {{ line_item.unit_price_measurement.reference_unit }}
                             {%- endcapture -%}
-                              <span data-unit-price>{{ line_item.unit_price | money }}</span>
+                              <span data-unit-price>{%- render 'money-format', amount: line_item.unit_price -%}</span>
                               {{- unit_price_separator -}}
                               {{- unit_price_base_unit -}}
                             </span>
@@ -207,7 +207,7 @@
                         {%- endif -%}
                       </dl>
                     {%- else -%}
-                      <span>{{ line_item.final_price | money }}</span>
+                      <span>{%- render 'money-format', amount: line_item.final_price -%}</span>
                     {%- endif -%}
                   </td>
                   <td
@@ -230,17 +230,17 @@
                           <span class="visually-hidden">{{ 'products.product.price.regular_price' | t }}</span>
                         </dt>
                         <dd class="regular-price m-0">
-                          <s>{{ line_item.original_line_price | money }}</s>
+                          <s>{%- render 'money-format', amount: line_item.original_line_price -%}</s>
                         </dd>
                         <dt>
                           <span class="visually-hidden">{{ 'products.product.price.sale_price' | t }}</span>
                         </dt>
                         <dd class="m-0">
-                          <span>{{ line_item.final_line_price | money }}</span>
+                          <span>{%- render 'money-format', amount: line_item.final_line_price -%}</span>
                         </dd>
                       </dl>
                     {%- else -%}
-                      {{ line_item.original_line_price | money }}
+                      {%- render 'money-format', amount: line_item.original_line_price -%}
                     {%- endif -%}
                   </td>
                 </tr>
@@ -250,7 +250,7 @@
         </div>
         <ul class="order-total-amount md:text-right">
           <li>
-            <span>{{ 'customer.order.subtotal' | t }}:</span> {{ order.line_items_subtotal_price | money }}
+            <span>{{ 'customer.order.subtotal' | t }}:</span> {%- render 'money-format', amount: order.line_items_subtotal_price -%}
           </li>
 
           {%- if order.cart_level_discount_applications != blank -%}
@@ -264,7 +264,7 @@
                   >:
                 </span>
                 <div>
-                  <span>-{{ discount_application.total_allocated_amount | money }}</span>
+                  <span>-{%- render 'money-format', amount: discount_application.total_allocated_amount -%}</span>
                   <span class="cart-discount">
                     {% render 'icon-discount' %}
                     {{- discount_application.title -}}
@@ -277,7 +277,7 @@
           {%- for shipping_method in order.shipping_methods -%}
             <li>
               <span>{{ 'customer.order.shipping' | t }} ({{ shipping_method.title }}):</span>
-              {{ shipping_method.price | money }}
+              {%- render 'money-format', amount: shipping_method.price -%}
             </li>
           {%- endfor -%}
 
@@ -287,24 +287,24 @@
                 {{ 'customer.order.tax' | t }} ({{ tax_line.title }}
                 {{ tax_line.rate | times: 100 }}%):
               </span>
-              {{ tax_line.price | money }}
+              {%- render 'money-format', amount: tax_line.price -%}
             </li>
           {%- endfor -%}
           {%- if order.total_duties -%}
             <li>
               <span>{{ 'customer.order.total_duties' | t }}:</span>
-              {{ order.total_duties | money }}
+              {%- render 'money-format', amount: order.total_duties -%}
             </li>
           {%- endif -%}
           {%- if order.total_refunded_amount > 0 -%}
             <li>
               <span>{{ 'customer.order.total_refunded' | t }}:</span>
-              -{{ order.total_refunded_amount | money_with_currency }}
+              -{%- render 'money-format', amount: order.total_refunded_amount -%}
             </li>
           {%- endif -%}
           <li class="h4">
             <span>{{ 'customer.order.total' | t }}:</span>
-            {{ order.total_net_amount | money_with_currency }}
+            {%- render 'money-format', amount: order.total_net_amount -%}
           </li>
         </ul>
       </div>

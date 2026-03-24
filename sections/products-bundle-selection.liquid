@@ -337,13 +337,7 @@ calc(100vw / {{ columns_desktop }})
                 <div class="flex items-center justify-between gap-3 h4">
                   <div>{{- 'sections.products-bundle-selection.total' | t | append: ':' -}}</div>
                   <div class="products-bundle-selection__bar-total">
-                    {%- liquid
-                      if settings.currency_code_enabled
-                        echo 0 | money_with_currency
-                      else
-                        echo 0 | money
-                      endif
-                    -%}
+                    {%- render 'money-format', amount: 0 -%}
                   </div>
                 </div>
                 <div class="product-form__error-message blocks-radius-md alert alert--error" role="alert" hidden></div>

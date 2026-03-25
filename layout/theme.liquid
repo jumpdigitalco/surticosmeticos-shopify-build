@@ -142,5 +142,8 @@
     {%- if settings.enable_product_compare -%}
       <script src="{{ 'compare.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    {%- comment -%} custom.css otra vez al final para que gane sobre los CSS de secciones (body) {%- endcomment -%}
+    {{ 'custom.css' | asset_url | stylesheet_tag }}
   </body>
 </html>

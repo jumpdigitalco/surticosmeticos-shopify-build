@@ -3031,6 +3031,155 @@
         }
       }
     },
+    "collection-page-description": {
+      "name": "Descripción de colección",
+      "settings": {
+        "header_content": {
+          "content": "Contenido"
+        },
+        "content_source": {
+          "label": "Origen del contenido",
+          "options__collection": {
+            "label": "Desde la colección (título y descripción en el admin de Shopify)"
+          },
+          "options__manual": {
+            "label": "Manual (campos de abajo)"
+          }
+        },
+        "collection_help": {
+          "content": "El modo colección usa el título y la descripción de Productos → Colecciones → [esta colección]. Edítalos en el administrador."
+        },
+        "show_heading": {
+          "label": "Mostrar el título de la colección como encabezado"
+        },
+        "heading": {
+          "label": "Título"
+        },
+        "description": {
+          "label": "Descripción"
+        },
+        "header_layout": {
+          "content": "Diseño"
+        },
+        "max_width": {
+          "label": "Ancho máximo del contenido (escritorio)"
+        },
+        "vertical_margin": {
+          "label": "Margen inferior del bloque (arriba siempre 0)"
+        },
+        "padding_horizontal_mobile": {
+          "label": "Padding horizontal (móvil)"
+        },
+        "text_color": {
+          "label": "Color del texto"
+        },
+        "header_heading": {
+          "content": "Encabezado"
+        },
+        "heading_size_desktop": {
+          "label": "Tamaño del título (escritorio)"
+        },
+        "heading_size_mobile": {
+          "label": "Tamaño del título (móvil)"
+        },
+        "heading_align_desktop": {
+          "label": "Alineación del título (escritorio)"
+        },
+        "heading_align_mobile": {
+          "label": "Alineación del título (móvil)"
+        },
+        "header_body": {
+          "content": "Texto descriptivo"
+        },
+        "body_size_desktop": {
+          "label": "Tamaño del cuerpo (escritorio)"
+        },
+        "body_size_mobile": {
+          "label": "Tamaño del cuerpo (móvil)"
+        },
+        "body_align_desktop": {
+          "label": "Alineación del cuerpo (escritorio)"
+        },
+        "body_align_mobile": {
+          "label": "Alineación del cuerpo (móvil)"
+        },
+        "header_read_more": {
+          "content": "Leer más"
+        },
+        "enable_read_more": {
+          "label": "Activar «leer más» para textos largos"
+        }
+      }
+    },
+    "collection-promo-banners": {
+      "name": "Banners promocionales (colección)",
+      "settings": {
+        "intro": {
+          "content": "Franja de imágenes promocionales en páginas de colección. Añade bloques de banner; configura slides, espacios y padding horizontal abajo."
+        },
+        "visibility": {
+          "label": "Mostrar en",
+          "options__desktop": {
+            "label": "Solo escritorio"
+          },
+          "options__mobile": {
+            "label": "Solo móvil"
+          },
+          "options__both": {
+            "label": "Escritorio y móvil"
+          }
+        },
+        "carousel_color_scheme": {
+          "label": "Color de los controles del carrusel"
+        },
+        "header_spacing": {
+          "content": "Espaciado"
+        },
+        "padding_inline": {
+          "label": "Padding horizontal (contenido de la sección)",
+          "info": "Añade padding izquierdo y derecho dentro del contenedor alrededor del carrusel."
+        },
+        "gap_desktop": {
+          "label": "Espacio entre slides (escritorio)"
+        },
+        "gap_mobile": {
+          "label": "Espacio entre slides (móvil)"
+        },
+        "header_carousel": {
+          "content": "Carrusel"
+        },
+        "slides_desktop": {
+          "label": "Slides visibles a la vez (escritorio)"
+        },
+        "slides_mobile": {
+          "label": "Slides visibles a la vez (móvil)"
+        },
+        "slides_visible": {
+          "info": "El resto de slides se desplaza en horizontal. En móvil usa arrastre; en escritorio, flechas o rueda del ratón."
+        }
+      },
+      "blocks": {
+        "banner": {
+          "name": "Banner",
+          "settings": {
+            "image_desktop": {
+              "label": "Imagen (escritorio)"
+            },
+            "image_mobile": {
+              "label": "Imagen (móvil)",
+              "info": "Opcional. Si está vacía, se usa la imagen de escritorio en móvil."
+            },
+            "image_alt": {
+              "label": "Texto alternativo",
+              "info": "Describe la imagen para accesibilidad y SEO."
+            },
+            "link": {
+              "label": "Enlace"
+            }
+          }
+        }
+      }
+    },
     "main-collection-product-grid": {
       "name": "Cuadrícula de productos",
       "settings": {

@@ -25,7 +25,12 @@
     assign show_toolbar = true
   endif
 
-  assign block_size = section.blocks.size
+  assign block_size = 0
+  for block in section.blocks
+    if block.type == 'image_card'
+      assign block_size = block_size | plus: 1
+    endif
+  endfor
   assign products_to_display = section.settings.products_per_page | minus: block_size
 -%}
 {%- capture image_sizes -%}

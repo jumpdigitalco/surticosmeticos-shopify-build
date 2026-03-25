@@ -18,6 +18,49 @@
         "padding_bottom": 20
       }
     },
+    "collection_promo_banners": {
+      "type": "collection-promo-banners",
+      "settings": {
+        "visibility": "desktop_only",
+        "container": "fixed",
+        "color_scheme": "scheme-1",
+        "carousel_color_scheme": "scheme-1",
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "padding_inline": 0,
+        "gap_desktop": 16,
+        "gap_mobile": 12,
+        "slides_desktop": 3,
+        "slides_mobile": 1
+      }
+    },
+    "collection_page_description": {
+      "type": "collection-page-description",
+      "settings": {
+        "content_source": "collection",
+        "show_heading": true,
+        "heading": "Planchas para cabello",
+        "description": "<p>¿Buscas los mejores Eléctricos para el cabello en Colombia? Descubre nuestra selección de planchas profesionales, secadores, cepillos alisadores y más.</p>",
+        "max_width": 650,
+        "vertical_margin": 50,
+        "padding_horizontal_mobile": 16,
+        "text_color": "#2e0735",
+        "color_scheme": "scheme-1",
+        "heading_tag": "h2",
+        "heading_size_desktop": 40,
+        "heading_size_mobile": 28,
+        "heading_align_desktop": "center",
+        "heading_align_mobile": "center",
+        "body_size_desktop": 14,
+        "body_size_mobile": 14,
+        "body_align_desktop": "center",
+        "body_align_mobile": "center",
+        "enable_read_more": false,
+        "text_line_limit": "none",
+        "read_more_button_style": "btn--underline",
+        "read_more_button_icon": "none"
+      }
+    },
     "banner": {
       "type": "main-collection-banner",
       "blocks": {
@@ -35,6 +78,7 @@
       "block_order": [
         "collection_info_zUNyKV"
       ],
+      "disabled": true,
       "custom_css": [
         ".collection-hero__description {max-width: 40rem;}"
       ],
@@ -59,72 +103,84 @@
         "featured_collection_L9N3Tg": {
           "type": "featured_collection",
           "settings": {
+            "collection": "",
             "title": "Sale Items"
           }
         },
         "featured_collection_gxdACj": {
           "type": "featured_collection",
           "settings": {
+            "collection": "",
             "title": "Best Sellers"
           }
         },
         "featured_collection_jQXtir": {
           "type": "featured_collection",
           "settings": {
+            "collection": "",
             "title": "Gift Sets"
           }
         },
         "featured_collection_4H9LzM": {
           "type": "featured_collection",
           "settings": {
+            "collection": "",
             "title": "New Arrivals"
           }
         },
         "featured_collection_jMA9xm": {
           "type": "featured_collection",
           "settings": {
+            "collection": "",
             "title": "Skincare"
           }
         },
         "featured_collection_J6hxH9": {
           "type": "featured_collection",
           "settings": {
+            "collection": "",
             "title": "Makeup"
           }
         },
         "featured_collection_HwzPfD": {
           "type": "featured_collection",
           "settings": {
+            "collection": "",
             "title": "Hair"
           }
         },
         "featured_collection_GW3kAL": {
           "type": "featured_collection",
           "settings": {
+            "collection": "",
             "title": "Brands"
           }
         },
         "featured_collection_J6V8fx": {
           "type": "featured_collection",
           "settings": {
+            "collection": "",
             "title": "Body"
           }
         },
         "featured_collection_NkFYeg": {
           "type": "featured_collection",
           "settings": {
+            "collection": "",
             "title": "Sunscreen"
           }
         },
         "featured_collection_eBphH3": {
           "type": "featured_collection",
           "settings": {
+            "collection": "",
             "title": "Gift Sets"
           }
         },
         "featured_collection_mFCdUY": {
           "type": "featured_collection",
           "settings": {
+            "collection": "",
             "title": "New Arrivals"
           }
         }
@@ -143,6 +199,7 @@
         "featured_collection_eBphH3",
         "featured_collection_mFCdUY"
       ],
+      "disabled": false,
       "custom_css": [],
       "settings": {
         "container": "fixed",
@@ -162,7 +219,17 @@
         "button_link": "",
         "button_style": "btn--underline",
         "button_icon": "none",
+        "card_color_scheme": "",
+        "card_style": "standard",
+        "card_heading_size": "text-base",
+        "card_image_ratio": "1/1",
+        "card_image_width": "medium",
+        "card_image_padding": "none",
         "rounded_card_image": true,
+        "mobile_layout": "vertical",
+        "carousel_item_size": "auto",
+        "columns_desktop": 6,
+        "carousel_control_color_scheme": "",
         "padding_top": 20,
         "padding_bottom": 20,
         "show_section_divider": false,
@@ -174,6 +241,7 @@
       "blocks": {
         "image_card_mwkyJy": {
           "type": "image_card",
+          "disabled": true,
           "settings": {
             "color_scheme": "scheme-inverse",
             "image_position": 1,
@@ -183,6 +251,7 @@
             "content_alignment": "left",
             "content_spacing": "extra-small",
             "content_gap": "fitted",
+            "card_link": "",
             "subheading": "<em>Big Saving</em>",
             "subheading_style": "",
             "heading": "On Holiday Sets",
@@ -191,6 +260,8 @@
             "highlight_style_color": "",
             "highlight_text_color": "",
             "heading_size": "h3",
+            "heading_size_mobile": "inherit",
+            "heading_size_custom": 18,
             "description": "",
             "text_size": "text-base",
             "button_label": "Explore Now",
@@ -217,7 +288,7 @@
         "filter_type": "vertical",
         "expand_filter_groups": "Availability, Price, Color, Size, Category, Product Type",
         "enable_sorting": true,
-        "enable_layout_switching": true,
+        "enable_layout_switching": false,
         "columns_mobile": "2",
         "padding_top": 28,
         "padding_bottom": 0,
@@ -254,14 +325,15 @@
         "heading_kVf6qj",
         "text_xtLQE8"
       ],
+      "disabled": false,
       "custom_css": [],
       "settings": {
         "container": "fixed",
-        "color_scheme": "scheme-10",
+        "color_scheme": "scheme-1",
         "use_color_scheme_in_container": true,
         "content_spacing": "standard",
         "content_alignment": "left",
-        "padding_top": 60,
+        "padding_top": 0,
         "padding_bottom": 0,
         "show_section_divider": false,
         "divider_width": "fixed"
@@ -274,6 +346,7 @@
           "type": "button_item",
           "settings": {
             "button_label": "Lip Scrubs",
+            "button_link": "",
             "icon": "check"
           }
         },
@@ -281,6 +354,7 @@
           "type": "button_item",
           "settings": {
             "button_label": "Matte Lipsticks",
+            "button_link": "",
             "icon": "check"
           }
         },
@@ -288,6 +362,7 @@
           "type": "button_item",
           "settings": {
             "button_label": "Foundations",
+            "button_link": "",
             "icon": "check"
           }
         },
@@ -295,6 +370,7 @@
           "type": "button_item",
           "settings": {
             "button_label": "Sensitive Toner",
+            "button_link": "",
             "icon": "check"
           }
         },
@@ -302,6 +378,7 @@
           "type": "button_item",
           "settings": {
             "button_label": "Makeup Remove",
+            "button_link": "",
             "icon": "check"
           }
         },
@@ -309,6 +386,7 @@
           "type": "button_item",
           "settings": {
             "button_label": "Makeup Tools",
+            "button_link": "",
             "icon": "check"
           }
         },
@@ -316,6 +394,7 @@
           "type": "button_item",
           "settings": {
             "button_label": "Hydrating Creams",
+            "button_link": "",
             "icon": "check"
           }
         },
@@ -323,6 +402,7 @@
           "type": "button_item",
           "settings": {
             "button_label": "Lip Scrubs",
+            "button_link": "",
             "icon": "check"
           }
         },
@@ -330,6 +410,7 @@
           "type": "button_item",
           "settings": {
             "button_label": "Foundations",
+            "button_link": "",
             "icon": "check"
           }
         }
@@ -345,6 +426,7 @@
         "button_item_8PEzWz",
         "button_item_7jqcBX"
       ],
+      "disabled": true,
       "settings": {
         "container": "fixed",
         "color_scheme": "",
@@ -359,6 +441,7 @@
         "heading_size": "h2",
         "item_alignment": "left",
         "item_button_style": "btn--icon",
+        "item_button_font": "button",
         "enable_slider": true,
         "swipe_on_mobile": true,
         "show_section_divider": false,
@@ -370,10 +453,12 @@
   },
   "order": [
     "breadcrumbs_Gxg9wp",
+    "collection_promo_banners",
+    "collection_page_description",
     "banner",
     "collection_list_slider_6qbNfj",
     "product-grid",
-    "rich_text_dgPtDV",
-    "buttons_with_icon_XJn7cx"
+    "buttons_with_icon_XJn7cx",
+    "rich_text_dgPtDV"
   ]
 }

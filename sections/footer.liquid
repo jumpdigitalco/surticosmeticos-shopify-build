@@ -327,6 +327,12 @@
             &copy; {{ 'now' | date: '%Y' }}
             <a class="link-underline" href="{{ routes.root_url }}">{{ shop.name }}</a>.
             {{ powered_by_link }}
+            {% comment %} Crédito agencia — no editable desde el admin {% endcomment %}
+            <span class="footer__jump-digital-text text-subtext">
+              <span class="footer__jump-digital-sep" aria-hidden="true">·</span>
+              Implementado por:
+              <a href="https://jumpdigital.co/" class="link-underline font-body-bolder" target="_blank" rel="noopener noreferrer">Jump Digital</a>
+            </span>
           </p>
 
           {%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}

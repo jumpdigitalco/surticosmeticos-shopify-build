@@ -137,8 +137,8 @@
       "list": "View as list",
       "grid": "View as grid"
     },
-    "view_more": "View more",
-    "view_less": "View less",
+    "view_more": "Read more",
+    "view_less": "Read less",
     "show_more": "Show more",
     "show_less": "Show less",
     "play_video": "Play video",
@@ -380,6 +380,13 @@
     },
     "collection_template": {
       "title": "Collection"
+    },
+    "collection_page_description": {
+      "placeholder_heading": "Add a heading in the section settings",
+      "placeholder_body": "Add text in the collection admin or switch to manual content in this section."
+    },
+    "collection-promo-banners": {
+      "empty": "Add banner blocks. Each block can use a desktop image, optional mobile image, and a link."
     },
     "slideshow": {
       "pause_slideshow": "Pause slideshow",

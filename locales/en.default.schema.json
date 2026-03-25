@@ -3031,6 +3031,155 @@
         }
       }
     },
+    "collection-page-description": {
+      "name": "Collection description",
+      "settings": {
+        "header_content": {
+          "content": "Content"
+        },
+        "content_source": {
+          "label": "Content source",
+          "options__collection": {
+            "label": "From collection (title + description in Shopify admin)"
+          },
+          "options__manual": {
+            "label": "Manual (fields below)"
+          }
+        },
+        "collection_help": {
+          "content": "Collection mode uses the title and description from Products → Collections → [this collection]. Edit them in the admin."
+        },
+        "show_heading": {
+          "label": "Show collection title as heading"
+        },
+        "heading": {
+          "label": "Heading"
+        },
+        "description": {
+          "label": "Description"
+        },
+        "header_layout": {
+          "content": "Layout"
+        },
+        "max_width": {
+          "label": "Maximum content width (desktop)"
+        },
+        "vertical_margin": {
+          "label": "Margin below the block (top is always 0)"
+        },
+        "padding_horizontal_mobile": {
+          "label": "Horizontal padding (mobile)"
+        },
+        "text_color": {
+          "label": "Text color"
+        },
+        "header_heading": {
+          "content": "Heading"
+        },
+        "heading_size_desktop": {
+          "label": "Heading size (desktop)"
+        },
+        "heading_size_mobile": {
+          "label": "Heading size (mobile)"
+        },
+        "heading_align_desktop": {
+          "label": "Heading alignment (desktop)"
+        },
+        "heading_align_mobile": {
+          "label": "Heading alignment (mobile)"
+        },
+        "header_body": {
+          "content": "Description text"
+        },
+        "body_size_desktop": {
+          "label": "Body text size (desktop)"
+        },
+        "body_size_mobile": {
+          "label": "Body text size (mobile)"
+        },
+        "body_align_desktop": {
+          "label": "Body alignment (desktop)"
+        },
+        "body_align_mobile": {
+          "label": "Body alignment (mobile)"
+        },
+        "header_read_more": {
+          "content": "Read more"
+        },
+        "enable_read_more": {
+          "label": "Enable “read more” for long text"
+        }
+      }
+    },
+    "collection-promo-banners": {
+      "name": "Collection promo banners",
+      "settings": {
+        "intro": {
+          "content": "Promotional image strip for collection pages. Add banner blocks; configure slides visible, gaps, and horizontal padding below."
+        },
+        "visibility": {
+          "label": "Show on",
+          "options__desktop": {
+            "label": "Desktop only"
+          },
+          "options__mobile": {
+            "label": "Mobile only"
+          },
+          "options__both": {
+            "label": "Desktop and mobile"
+          }
+        },
+        "carousel_color_scheme": {
+          "label": "Carousel controls color"
+        },
+        "header_spacing": {
+          "content": "Spacing"
+        },
+        "padding_inline": {
+          "label": "Horizontal padding (section content)",
+          "info": "Adds left and right padding inside the container around the carousel."
+        },
+        "gap_desktop": {
+          "label": "Gap between slides (desktop)"
+        },
+        "gap_mobile": {
+          "label": "Gap between slides (mobile)"
+        },
+        "header_carousel": {
+          "content": "Carousel"
+        },
+        "slides_desktop": {
+          "label": "Slides visible at once (desktop)"
+        },
+        "slides_mobile": {
+          "label": "Slides visible at once (mobile)"
+        },
+        "slides_visible": {
+          "info": "Additional slides scroll horizontally. Use mouse wheel or drag on touch devices."
+        }
+      },
+      "blocks": {
+        "banner": {
+          "name": "Banner",
+          "settings": {
+            "image_desktop": {
+              "label": "Image (desktop)"
+            },
+            "image_mobile": {
+              "label": "Image (mobile)",
+              "info": "Optional. If empty, the desktop image is used on mobile."
+            },
+            "image_alt": {
+              "label": "Image alt text",
+              "info": "Describe the image for accessibility and SEO."
+            },
+            "link": {
+              "label": "Link"
+            }
+          }
+        }
+      }
+    },
     "main-collection-product-grid": {
       "name": "Product grid",
       "settings": {

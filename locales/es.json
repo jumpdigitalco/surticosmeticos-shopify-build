@@ -137,8 +137,8 @@
       "list": "Ver como lista",
       "grid": "Ver como cuadrícula"
     },
-    "view_more": "Ver más",
-    "view_less": "Ver menos",
+    "view_more": "Leer más",
+    "view_less": "Leer menos",
     "show_more": "Mostrar más",
     "show_less": "Mostrar menos",
     "play_video": "Reproducir vídeo",
@@ -380,6 +380,13 @@
     },
     "collection_template": {
       "title": "Recopilación"
+    },
+    "collection_page_description": {
+      "placeholder_heading": "Añade un título en la configuración de la sección",
+      "placeholder_body": "Escribe el texto en Admin → Colecciones o usa el modo manual en esta sección."
+    },
+    "collection-promo-banners": {
+      "empty": "Añade bloques de banner. Cada uno puede tener imagen de escritorio, imagen móvil opcional y enlace."
     },
     "slideshow": {
       "pause_slideshow": "Pausar presentación de diapositivas",

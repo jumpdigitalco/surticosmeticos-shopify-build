@@ -1,6 +1,5 @@
 package.json
 package-lock.json
 tsconfig.json
-config/settings_data.json
 .DS_Store
 .DS_Store?

@@ -241,7 +241,7 @@
         "regular_price": "Precio habitual",
         "sale_price": "Precio de venta",
         "unit_price": "Precio unitario",
-        "save_price_html": "Guardar <span data-sale-value>{{ amount }}</span>"
+        "save_price_html": "<span data-sale-value>{{ amount }}</span>"
       },
       "share": "Compartir este producto",
       "share_label": "Compartir",

@@ -20,6 +20,7 @@
     },
     "collection_promo_banners": {
       "type": "collection-promo-banners",
+      "disabled": true,
       "settings": {
         "visibility": "desktop_only",
         "container": "fixed",
@@ -199,7 +200,6 @@
         "featured_collection_eBphH3",
         "featured_collection_mFCdUY"
       ],
-      "disabled": false,
       "custom_css": [],
       "settings": {
         "container": "fixed",
@@ -325,7 +325,6 @@
         "heading_kVf6qj",
         "text_xtLQE8"
       ],
-      "disabled": false,
       "custom_css": [],
       "settings": {
         "container": "fixed",

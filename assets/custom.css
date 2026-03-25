@@ -662,3 +662,138 @@ body .product__badges span.f-badge--sale {
   background-color: #ee3491 !important;
   background: #ee3491 !important;
 }
+
+/*
+ * Botón agregar al carrito en tarjetas de producto (vitrinas): solo icono (mismo SVG
+ * que el carrito del header), texto oculto con .visually-hidden para accesibilidad.
+ */
+body .product-card .product-card__main-actions .product-card__atc.btn,
+body .product-card .product-card__list-actions .product-card__list-atc.btn {
+  background-color: #7916ac !important;
+  background: #7916ac !important;
+  border-color: #7916ac !important;
+  color: #fff !important;
+}
+
+body .product-card .product-card__main-actions .product-card__atc.btn :is(.btn__text, .btn__icon),
+body .product-card .product-card__main-actions .product-card__atc.btn svg,
+body .product-card .product-card__list-actions .product-card__list-atc.btn :is(.btn__text, .btn__icon),
+body .product-card .product-card__list-actions .product-card__list-atc.btn svg {
+  color: #fff !important;
+}
+
+body .product-card .product-card__main-actions .product-card__atc.btn .icon,
+body .product-card .product-card__list-actions .product-card__list-atc.btn .icon {
+  color: #fff !important;
+}
+
+body .product-card .product-card__main-actions .product-card__atc.btn--white::before,
+body .product-card .product-card__main-actions .product-card__atc.btn--primary::before,
+body .product-card .product-card__main-actions .product-card__atc.btn--secondary::before {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Botón solo icono: ancho al contenido, circular, alineado a la derecha */
+body .product-card .product-card__main-actions {
+  justify-content: flex-end !important;
+}
+
+body .product-card .product-card__list-actions-main {
+  display: flex !important;
+  justify-content: flex-end !important;
+  width: 100%;
+}
+
+body .product-card .product-card__atc--icon-only.btn {
+  box-sizing: border-box;
+  width: 38px !important;
+  height: 38px !important;
+  min-width: 38px !important;
+  min-height: 38px !important;
+  max-width: 38px !important;
+  padding: 0 !important;
+  border-radius: 50% !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+body .product-card .product-card__atc--icon-only.btn .product-card__atc-icon svg,
+body .product-card .product-card__list-atc.product-card__atc--icon-only .product-card__list-atc-icon svg {
+  width: 18px !important;
+  height: 18px !important;
+  max-width: 18px !important;
+  max-height: 18px !important;
+}
+
+body .product-card .product-card__list-actions .product-card__atc--icon-only.btn {
+  margin-inline-start: auto !important;
+}
+
+body .product-card .product-card__list-actions .product-card__atc--icon-only.btn.w-full {
+  width: 38px !important;
+  max-width: 38px !important;
+}
+
+/* Vitrinas: borde en tarjetas de producto */
+body .product-card {
+  border: 1px solid #f7f7f5;
+  box-sizing: border-box;
+}
+
+/* Vitrinas: nombre de marca (vendor) */
+body .product-card .product-card__vendor,
+body .product-card .product-card__vendor a {
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  color: #452f48 !important;
+  text-transform: capitalize !important;
+}
+
+/* Vitrinas: nombre del producto (título) */
+body .product-card .product-card__title.text-pcard-title {
+  color: #452f48 !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  line-height: 1.35;
+  /* Reserva alto fijo (2 líneas) para alinear tarjetas con títulos cortos o largos */
+  min-height: calc(15px * 1.35 * 2);
+}
+
+body .product-card .product-card__title.text-pcard-title a,
+body .product-card .product-card__title.text-pcard-title .reversed-link__text {
+  color: #452f48 !important;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+}
+
+body .product-card .product-card__title.text-pcard-title a {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2 !important;
+  line-clamp: 2 !important;
+  --line-clamp: 2;
+  word-break: break-word;
+}
+
+/* Móvil: botón ATC sin transparencias (borde sólido, sin capa ::before semitransparente) */
+@media (max-width: 767.98px) {
+  body .product-card .product-card__main-actions .product-card__atc.btn--white::before,
+  body .product-card .product-card__main-actions .product-card__atc.btn--primary::before,
+  body .product-card .product-card__main-actions .product-card__atc.btn--secondary::before {
+    display: none !important;
+    content: none !important;
+  }
+
+  body .product-card .product-card__main-actions .product-card__atc.btn,
+  body .product-card .product-card__list-actions .product-card__list-atc.btn {
+    opacity: 1 !important;
+    background-color: #7916ac !important;
+    background: #7916ac !important;
+  }
+
+  body .product-card .product-card__action-button.product-card__atc--icon-only.btn {
+    border: 1px solid #7916ac !important;
+  }
+}

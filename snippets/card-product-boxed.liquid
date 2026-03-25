@@ -188,13 +188,13 @@
                 aria-controls="{{ quick_view_modal_id }}"
                 aria-haspopup="dialog"
               {% endif %}
-              class="product-card__atc product-card__action-button btn {{ settings.pcard_button_style }}"
+              class="product-card__atc product-card__atc--icon-only product-card__action-button btn {{ settings.pcard_button_style }}"
             >
-              <div class="btn__text flex gap-1 items-center">
-                <span class="product-card__atc-icon product-card__action-icon inline-flex md:hidden">
-                  {%- render 'icon-cart', name: settings.cart_icon -%}
+              <div class="btn__text flex gap-1 items-center justify-center">
+                <span class="product-card__atc-icon product-card__action-icon inline-flex" aria-hidden="true">
+                  {%- render 'icon-cart', name: settings.cart_icon, size: 'large' -%}
                 </span>
-                <span class="product-card__atc-text product-card__action-text">
+                <span class="visually-hidden">
                   {%- if use_short_text_for_atc_button -%}
                     {{- 'products.product.choose_options_short' | t -}}
                   {%- else -%}
@@ -230,13 +230,13 @@
                 disabled
               {% endif %}
               aria-label="{{ 'products.product.add_to_cart' | t }}"
-              class="product-card__atc product-card__action-button btn {{ settings.pcard_button_style }}"
+              class="product-card__atc product-card__atc--icon-only product-card__action-button btn {{ settings.pcard_button_style }}"
             >
-              <div class="btn__text flex gap-1 items-center">
-                <span class="product-card__atc-icon product-card__action-icon inline-flex md:hidden">
-                  {%- render 'icon-cart', name: settings.cart_icon -%}
+              <div class="btn__text flex gap-1 items-center justify-center">
+                <span class="product-card__atc-icon product-card__action-icon inline-flex" aria-hidden="true">
+                  {%- render 'icon-cart', name: settings.cart_icon, size: 'large' -%}
                 </span>
-                <span class="product-card__atc-text product-card__action-text">
+                <span class="visually-hidden">
                   {%- if variant.available -%}
                     {%- if use_short_text_for_atc_button -%}
                       {{- 'products.product.add_to_cart_short' | t -}}
@@ -335,14 +335,19 @@
                 aria-controls="{{ quick_view_modal_id }}"
                 aria-haspopup="dialog"
               {% endif %}
-              class="product-card__list-atc btn btn--primary"
+              class="product-card__list-atc product-card__atc--icon-only btn btn--primary"
             >
-              <span class="btn__text flex gap-1 items-center">
-                {%- if use_short_text_for_atc_button -%}
-                  {{- 'products.product.choose_options_short' | t -}}
-                {%- else -%}
-                  {{- 'products.product.choose_options' | t -}}
-                {%- endif -%}
+              <span class="btn__text flex gap-1 items-center justify-center">
+                <span class="inline-flex product-card__list-atc-icon" aria-hidden="true">
+                  {%- render 'icon-cart', name: settings.cart_icon, size: 'large' -%}
+                </span>
+                <span class="visually-hidden">
+                  {%- if use_short_text_for_atc_button -%}
+                    {{- 'products.product.choose_options_short' | t -}}
+                  {%- else -%}
+                    {{- 'products.product.choose_options' | t -}}
+                  {%- endif -%}
+                </span>
               </span>
             </{{ atc_button_tag }}>
           </div>
@@ -372,18 +377,23 @@
                 disabled
               {% endif %}
               aria-label="{{ 'products.product.add_to_cart' | t }}"
-              class="product-card__list-atc btn btn--primary w-full"
+              class="product-card__list-atc product-card__atc--icon-only btn btn--primary w-full"
             >
-              <span class="btn__text flex gap-1 items-center">
-                {%- if variant.available -%}
-                  {%- if use_short_text_for_atc_button -%}
-                    {{- 'products.product.add_to_cart_short' | t -}}
+              <span class="btn__text flex gap-1 items-center justify-center">
+                <span class="inline-flex product-card__list-atc-icon" aria-hidden="true">
+                  {%- render 'icon-cart', name: settings.cart_icon, size: 'large' -%}
+                </span>
+                <span class="visually-hidden">
+                  {%- if variant.available -%}
+                    {%- if use_short_text_for_atc_button -%}
+                      {{- 'products.product.add_to_cart_short' | t -}}
+                    {%- else -%}
+                      {{- 'products.product.add_to_cart' | t -}}
+                    {%- endif -%}
                   {%- else -%}
-                    {{- 'products.product.add_to_cart' | t -}}
+                    {{- 'products.product.sold_out' | t -}}
                   {%- endif -%}
-                {%- else -%}
-                  {{- 'products.product.sold_out' | t -}}
-                {%- endif -%}
+                </span>
               </span>
               {% render 'loading-spinner' %}
             </button>

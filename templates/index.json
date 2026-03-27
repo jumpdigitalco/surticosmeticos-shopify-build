@@ -16,19 +16,21 @@
           "type": "banner-card",
           "settings": {
             "color_scheme": "",
+            "image": "shopify://shop_images/BANNER-MAYBELLINE-PRINCIPAL-GRANGE-desktop.png",
+            "image_mobile": "shopify://shop_images/BANNER-MAYBELLINE-PRINCIPAL-GRANGE-desktop.png",
             "image_overlay_opacity": 0,
             "column_span": 4,
             "row_span": 2,
             "content_spacing": "medium",
-            "content_gap": "standard",
+            "content_gap": "tight",
             "content_position": "middle-left",
             "content_alignment": "left",
             "content_position_mobile": "middle-center",
             "content_alignment_mobile": "center",
-            "card_link": "",
-            "subheading": "Add a tag line",
+            "card_link": "shopify://collections/maybelline",
+            "subheading": "",
             "subheading_style": "",
-            "heading": "Image card",
+            "heading": "",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
@@ -38,7 +40,7 @@
             "heading_size_custom": 18,
             "text": "",
             "text_size": "text-base",
-            "button_label": "Button label",
+            "button_label": "",
             "button_style": "btn--primary",
             "button_icon": "none",
             "button_size": "btn--medium",
@@ -50,6 +52,8 @@
           "type": "banner-card",
           "settings": {
             "color_scheme": "",
+            "image": "shopify://shop_images/banner-pequeno-babyliss-xldesktop-pequeno.png",
+            "image_mobile": "shopify://shop_images/banner-pequeno-babyliss-xldesktop-pequeno.png",
             "image_overlay_opacity": 0,
             "column_span": 2,
             "row_span": 1,
@@ -59,10 +63,10 @@
             "content_alignment": "center",
             "content_position_mobile": "middle-center",
             "content_alignment_mobile": "center",
-            "card_link": "",
+            "card_link": "shopify://collections/babyliss-pro",
             "subheading": "",
             "subheading_style": "",
-            "heading": "Image card",
+            "heading": "",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
@@ -84,6 +88,8 @@
           "type": "banner-card",
           "settings": {
             "color_scheme": "",
+            "image": "shopify://shop_images/BANNER-PEQUENO-2-PERFUME-CAPILAR-CLICK-HAIR-desktop-pequeno.png",
+            "image_mobile": "shopify://shop_images/BANNER-PEQUENO-2-PERFUME-CAPILAR-CLICK-HAIR-desktop-pequeno.png",
             "image_overlay_opacity": 0,
             "column_span": 2,
             "row_span": 1,
@@ -93,10 +99,10 @@
             "content_alignment": "center",
             "content_position_mobile": "middle-center",
             "content_alignment_mobile": "center",
-            "card_link": "",
+            "card_link": "shopify://collections/click-cosmetics",
             "subheading": "",
             "subheading_style": "",
-            "heading": "Image card",
+            "heading": "",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
@@ -122,7 +128,7 @@
       ],
       "name": "t:sections.grid-banner.presets__2.name",
       "settings": {
-        "container": "fixed",
+        "container": "full",
         "color_scheme": "",
         "section_header_alignment": "center",
         "section_header_alignment_mobile": "inherit",
@@ -142,11 +148,11 @@
         "columns": 6,
         "banner_height": "medium",
         "gap": "2xs",
-        "enable_swiper_mobile": false,
-        "show_section_divider": false,
+        "enable_swiper_mobile": true,
+        "show_section_divider": true,
         "divider_width": "fixed",
-        "padding_top": 80,
-        "padding_bottom": 80
+        "padding_top": 30,
+        "padding_bottom": 0
       }
     },
     "featured_collection_bdaamt": {
@@ -155,8 +161,8 @@
         "collection_ydJPzX": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "title": "New Arrivals",
+            "collection": "accesorios-maquillaje",
+            "title": "Lo Nuevo",
             "show_banner": false,
             "color_scheme": "scheme-inverse",
             "card_link": "",
@@ -180,20 +186,20 @@
             "button_icon": "none"
           }
         },
-        "collection_E83rKg": {
+        "collection_neM6w8": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "title": "Best Sellers",
+            "collection": "shampoo",
+            "title": "Lo Más Vendido",
             "show_banner": false,
-            "color_scheme": "scheme-inverse",
+            "color_scheme": "scheme-1",
             "card_link": "",
-            "image_overlay_opacity": 10,
-            "content_position": "split-bottom-button",
+            "image_overlay_opacity": 0,
+            "content_position": "top-left",
             "content_alignment": "left",
-            "subheading": "Add a tagline",
+            "subheading": "",
             "subheading_style": "",
-            "heading": "Image card",
+            "heading": "Collections",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
@@ -211,22 +217,22 @@
       },
       "block_order": [
         "collection_ydJPzX",
-        "collection_E83rKg"
+        "collection_neM6w8"
       ],
       "custom_css": [],
       "settings": {
         "container": "fixed",
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "section_header_alignment": "left",
         "section_header_alignment_mobile": "inherit",
         "subheading": "",
-        "heading": "New Arrivals",
+        "heading": "Explora lo más buscado en belleza",
         "highlight_style": "none",
         "highlight_font_style": "italic",
         "highlight_style_color": "",
         "highlight_text_color": "",
         "heading_size": "h2",
-        "description": "<p>Traditional divides between personal and professional space.</p>",
+        "description": "<p>Descubre nuestra selección de productos de belleza para el cuidado del cabello, maquillaje y skincare.</p>",
         "text_size": "text-base",
         "button_label": "",
         "button_link": "",
@@ -255,101 +261,124 @@
         "featured_collection_L9N3Tg": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "Sale Items"
+            "collection": "tratamientos",
+            "title": "Tratamientos"
           }
         },
-        "featured_collection_gxdACj": {
+        "featured_collection_qGE3Xd": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "Best Sellers"
+            "collection": "bases",
+            "image": "shopify://shop_images/bases_-_copia.png",
+            "title": "Bases"
           }
         },
         "featured_collection_jQXtir": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "Gift Sets"
+            "collection": "shampoo",
+            "image": "shopify://shop_images/shampoo.png",
+            "title": "Shampoo"
           }
         },
         "featured_collection_4H9LzM": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "New Arrivals"
+            "collection": "tintes-y-decolorantes",
+            "image": "shopify://shop_images/tintes.png",
+            "title": "Tintes"
           }
         },
         "featured_collection_jMA9xm": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "Skincare"
+            "collection": "finalizadores-de-peinados",
+            "title": "Finalizadores"
           }
         },
         "featured_collection_J6hxH9": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "Makeup"
+            "collection": "planchas",
+            "image": "shopify://shop_images/planchas.png",
+            "title": "Planchas"
           }
         },
         "featured_collection_HwzPfD": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "Hair"
+            "collection": "pestaninas",
+            "image": "shopify://shop_images/pestaninas.png",
+            "title": "Pestañinas"
+          }
+        },
+        "featured_collection_fi6X4h": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "keratinas",
+            "image": "shopify://shop_images/keratinas.png",
+            "title": "Keratinas"
           }
         },
         "featured_collection_GW3kAL": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "Brands"
+            "collection": "esmaltes",
+            "image": "shopify://shop_images/esmaltes_-_copia.png",
+            "title": "Esmaltes"
           }
         },
         "featured_collection_J6V8fx": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "Body"
+            "collection": "labiales",
+            "title": "Labiales"
           }
         },
         "featured_collection_NkFYeg": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "Sunscreen"
+            "collection": "oleos",
+            "title": "Óleos"
           }
         },
         "featured_collection_eBphH3": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "Gift Sets"
+            "collection": "serums",
+            "title": "Sérums"
           }
         },
         "featured_collection_mFCdUY": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "New Arrivals"
+            "collection": "protectores-solares",
+            "title": "Protectores"
+          }
+        },
+        "featured_collection_tpcHUC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "brochas",
+            "title": "Brochas"
           }
         }
       },
       "block_order": [
         "featured_collection_L9N3Tg",
-        "featured_collection_gxdACj",
+        "featured_collection_qGE3Xd",
         "featured_collection_jQXtir",
         "featured_collection_4H9LzM",
         "featured_collection_jMA9xm",
         "featured_collection_J6hxH9",
         "featured_collection_HwzPfD",
+        "featured_collection_fi6X4h",
         "featured_collection_GW3kAL",
         "featured_collection_J6V8fx",
         "featured_collection_NkFYeg",
         "featured_collection_eBphH3",
-        "featured_collection_mFCdUY"
+        "featured_collection_mFCdUY",
+        "featured_collection_tpcHUC"
       ],
       "custom_css": [],
       "settings": {
@@ -394,16 +423,17 @@
           "type": "image_card",
           "settings": {
             "color_scheme": "scheme-info",
+            "image": "shopify://shop_images/BANNER-DESTACADOS1-ANA-MARIA-HIDRASENSE.png",
             "image_ratio": "adapt",
             "image_overlay_opacity": 0,
             "content_position": "split-bottom-button",
             "content_alignment": "left",
             "content_spacing": "small",
             "content_gap": "fitted",
-            "card_link": "",
-            "subheading": "<em>Holiday Gifts</em>",
+            "card_link": "shopify://collections/ana-maria",
+            "subheading": "",
             "subheading_style": "",
-            "heading": "Cleansing Set For Sensitive Skin",
+            "heading": "",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
@@ -412,15 +442,15 @@
             "heading_size_mobile": "inherit",
             "heading_size_custom": 18,
             "description": "",
-            "button_label": "Shop Now",
+            "button_label": "",
             "button_style": "btn--secondary",
             "button_icon": "none",
             "show_badge": true,
             "badge_color_scheme": "scheme-2",
             "badge_shape": "circle",
             "badge_position": "top-right",
-            "badge_subtext": "Save",
-            "badge_text": "40%",
+            "badge_subtext": "",
+            "badge_text": "",
             "color_scheme_mobile": "scheme-info",
             "show_text_below": false,
             "content_alignment_mobile": "left",
@@ -430,20 +460,21 @@
             "enable_preload_image": false
           }
         },
-        "image_card_JJt8HA": {
+        "image_card_gCa8zP": {
           "type": "image_card",
           "settings": {
             "color_scheme": "scheme-info",
+            "image": "shopify://shop_images/BANNER-DESTACADOS-2-KERATINA-KABA.png",
             "image_ratio": "adapt",
             "image_overlay_opacity": 0,
             "content_position": "split-bottom-button",
             "content_alignment": "left",
             "content_spacing": "small",
             "content_gap": "fitted",
-            "card_link": "",
-            "subheading": "<em>Holiday Gifts</em>",
+            "card_link": "shopify://collections/kaba",
+            "subheading": "",
             "subheading_style": "",
-            "heading": "Pastel Bathroom Coutertop",
+            "heading": "",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
@@ -452,15 +483,15 @@
             "heading_size_mobile": "inherit",
             "heading_size_custom": 18,
             "description": "",
-            "button_label": "Shop Now",
+            "button_label": "",
             "button_style": "btn--secondary",
             "button_icon": "none",
             "show_badge": true,
             "badge_color_scheme": "scheme-2",
             "badge_shape": "circle",
             "badge_position": "top-right",
-            "badge_subtext": "Save",
-            "badge_text": "30%",
+            "badge_subtext": "",
+            "badge_text": "",
             "color_scheme_mobile": "scheme-info",
             "show_text_below": false,
             "content_alignment_mobile": "left",
@@ -473,7 +504,7 @@
       },
       "block_order": [
         "image_card_RrKktC",
-        "image_card_JJt8HA"
+        "image_card_gCa8zP"
       ],
       "custom_css": [
         "@media (min-width: 768px) {.card-media__content-wrapper {max-width: 26rem; }}",
@@ -510,7 +541,7 @@
         "collection_j6AMPW": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "tratamientos-anticaida-y-crecimiento",
             "title": "New Arrivals",
             "show_banner": false,
             "color_scheme": "scheme-inverse",
@@ -518,9 +549,9 @@
             "image_overlay_opacity": 10,
             "content_position": "split-bottom-button",
             "content_alignment": "left",
-            "subheading": "Add a tagline",
+            "subheading": "",
             "subheading_style": "",
-            "heading": "Image card",
+            "heading": "",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
@@ -530,43 +561,14 @@
             "heading_size_custom": 18,
             "description": "",
             "text_size": "text-base",
-            "button_label": "Button label",
-            "button_style": "btn--primary",
-            "button_icon": "none"
-          }
-        },
-        "collection_QPitxx": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "title": "Best Sellers",
-            "show_banner": false,
-            "color_scheme": "scheme-inverse",
-            "card_link": "",
-            "image_overlay_opacity": 10,
-            "content_position": "split-bottom-button",
-            "content_alignment": "left",
-            "subheading": "Add a tagline",
-            "subheading_style": "",
-            "heading": "Image card",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h2",
-            "heading_size_mobile": "inherit",
-            "heading_size_custom": 18,
-            "description": "",
-            "text_size": "text-base",
-            "button_label": "Button label",
+            "button_label": "",
             "button_style": "btn--primary",
             "button_icon": "none"
           }
         }
       },
       "block_order": [
-        "collection_j6AMPW",
-        "collection_QPitxx"
+        "collection_j6AMPW"
       ],
       "custom_css": [],
       "settings": {
@@ -575,13 +577,13 @@
         "section_header_alignment": "left",
         "section_header_alignment_mobile": "inherit",
         "subheading": "",
-        "heading": "New Arrivals",
+        "heading": "Tratamientos para la caída del cabello.",
         "highlight_style": "none",
         "highlight_font_style": "italic",
         "highlight_style_color": "",
         "highlight_text_color": "",
         "heading_size": "h2",
-        "description": "<p>Traditional divides between personal and professional space.</p>",
+        "description": "<p>Productos especializados para la caída del cabello. Shampoos, ampollas y tratamientos capilares para fortalecer, nutrir y estimular el crecimiento.</p>",
         "text_size": "text-base",
         "button_label": "",
         "button_link": "",
@@ -610,61 +612,71 @@
         "logo_qNQF84": {
           "type": "logo",
           "settings": {
-            "image_link": ""
+            "image": "shopify://shop_images/ana-maria.jpg",
+            "image_link": "shopify://collections/ana-maria"
           }
         },
         "logo_tAkTPL": {
           "type": "logo",
           "settings": {
-            "image_link": ""
+            "image": "shopify://shop_images/babilisspro.jpg",
+            "image_link": "shopify://collections/babyliss-pro"
           }
         },
         "logo_FD8JBY": {
           "type": "logo",
           "settings": {
-            "image_link": ""
+            "image": "shopify://shop_images/maybeliine.jpg",
+            "image_link": "shopify://collections/maybelline"
           }
         },
         "logo_xPFeWj": {
           "type": "logo",
           "settings": {
-            "image_link": ""
+            "image": "shopify://shop_images/milagros.jpg",
+            "image_link": "shopify://collections/milagros"
           }
         },
         "logo_Wg9Gxm": {
           "type": "logo",
           "settings": {
-            "image_link": ""
+            "image": "shopify://shop_images/origen-botanico.jpg",
+            "image_link": "shopify://collections/ritual-botanico"
           }
         },
         "logo_KMdikk": {
           "type": "logo",
           "settings": {
-            "image_link": ""
+            "image": "shopify://shop_images/pocion.jpg",
+            "image_link": "shopify://collections/pocion"
           }
         },
         "logo_w8fETq": {
           "type": "logo",
           "settings": {
-            "image_link": ""
+            "image": "shopify://shop_images/prokpil.jpg",
+            "image_link": "shopify://collections/prokpil"
           }
         },
         "logo_BwPpkt": {
           "type": "logo",
           "settings": {
-            "image_link": ""
+            "image": "shopify://shop_images/recamier.jpg",
+            "image_link": "shopify://collections/recamier"
           }
         },
         "logo_dpfjtb": {
           "type": "logo",
           "settings": {
-            "image_link": ""
+            "image": "shopify://shop_images/samy.jpg",
+            "image_link": "shopify://collections/samy"
           }
         },
         "logo_QALd9d": {
           "type": "logo",
           "settings": {
-            "image_link": ""
+            "image": "shopify://shop_images/vogue.jpg",
+            "image_link": "shopify://collections/vogue"
           }
         }
       },
@@ -694,8 +706,8 @@
         "heading_size": "h2",
         "description": "",
         "text_size": "text-sm",
-        "button_label": "Shop All Brands",
-        "button_link": "",
+        "button_label": "Ver todas las marcas",
+        "button_link": "shopify://collections/marcas-capilar",
         "button_style": "btn--plain",
         "button_icon": "caret-right",
         "image_padding": "small",
@@ -718,36 +730,41 @@
         "featured_collection_xHgmqF": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "Body Oil"
+            "collection": "click-cosmetics",
+            "image": "shopify://shop_images/honey-hair.png",
+            "title": "Honey Hair"
           }
         },
         "featured_collection_D7VDLf": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "Sunscreen"
+            "collection": "shampoo-anticaida-y-crecimiento",
+            "image": "shopify://shop_images/cabello-largo.png",
+            "title": "Cabello Extralargo"
           }
         },
         "featured_collection_BqQqhK": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "Hand Cream"
+            "collection": "skincare",
+            "image": "shopify://shop_images/piel-glowy.png",
+            "title": "Piel Glowy"
           }
         },
         "featured_collection_rtQF3c": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "Makeup"
+            "collection": "maquillaje",
+            "image": "shopify://shop_images/toasty-makeup.png",
+            "title": "Toasty Makeup"
           }
         },
         "featured_collection_jHqfhg": {
           "type": "featured_collection",
           "settings": {
-            "collection": "",
-            "title": "Essentials"
+            "collection": "pestaninas",
+            "image": "shopify://shop_images/pestanas-muneca.png",
+            "title": "Pestañas de Muñeca"
           }
         }
       },
@@ -764,7 +781,7 @@
         "section_header_alignment": "left",
         "section_header_alignment_mobile": "inherit",
         "subheading": "",
-        "heading": "Trending Now",
+        "heading": "Tendencias",
         "highlight_style": "none",
         "highlight_font_style": "italic",
         "highlight_style_color": "",
@@ -772,8 +789,8 @@
         "heading_size": "h2",
         "description": "",
         "text_size": "text-base",
-        "button_label": "Shop Trending Now",
-        "button_link": "",
+        "button_label": "Ver todo",
+        "button_link": "shopify://collections",
         "button_style": "btn--plain",
         "button_icon": "caret-right",
         "card_color_scheme": "scheme-10",
@@ -801,17 +818,10 @@
     "promotion_banner_byLFDQ": {
       "type": "promotion-banner",
       "blocks": {
-        "subheading_xYwT9w": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "<em>For A Limited Time</em>",
-            "subheading_icon": "none"
-          }
-        },
         "heading_neHCyT": {
           "type": "heading",
           "settings": {
-            "heading": "Free Makeup Samples",
+            "heading": "A CUOTAS SIN INTERESES",
             "highlight_style": "none",
             "highlight_font_style": "italic",
             "highlight_style_color": "",
@@ -822,32 +832,33 @@
         "text_6irLkJ": {
           "type": "text",
           "settings": {
-            "text": "<p>Free 5 makeup samples with <br/>every order over $100</p>",
-            "text_color": "subtext"
+            "text": "<p>Compra eso que tanto quieres y empieza a pagar dentro de 1 mes, sin intereses* Aplican TYC.</p>",
+            "text_color": "base-text"
           }
         },
         "button_mjUrzy": {
           "type": "button",
           "settings": {
-            "button_label": "Shop Now",
-            "button_link": "",
-            "button_style": "btn--primary",
+            "button_label": "Explorar",
+            "button_link": "shopify://collections",
+            "button_style": "btn--secondary",
             "button_icon": "none"
           }
         }
       },
       "block_order": [
-        "subheading_xYwT9w",
         "heading_neHCyT",
         "text_6irLkJ",
         "button_mjUrzy"
       ],
       "settings": {
-        "container": "fixed",
+        "container": "full",
         "color_scheme": "scheme-4",
         "layout": "horizontal",
         "content_alignment": "center",
-        "content_alignment_mobile": "center",
+        "content_alignment_mobile": "left",
+        "image": "shopify://shop_images/banner-addi-pc.jpg",
+        "image_mobile": "shopify://shop_images/banner-addi-mobile.jpg",
         "padding_top": 40,
         "padding_bottom": 0
       }
@@ -965,20 +976,21 @@
     },
     "horizontal_products_list_qwYKGd": {
       "type": "horizontal-products-list",
+      "disabled": true,
       "settings": {
         "container": "fixed",
         "color_scheme": "scheme-1",
-        "collection": "",
+        "collection": "shampoo",
         "section_header_alignment": "left",
         "section_header_alignment_mobile": "inherit",
         "subheading": "",
-        "heading": "Virales esta semana",
+        "heading": "Ofertas de la Semana en Belleza",
         "highlight_style": "none",
         "highlight_font_style": "italic",
         "highlight_style_color": "",
         "highlight_text_color": "",
         "heading_size": "h2",
-        "description": "",
+        "description": "<p>Aprovecha descuentos exclusivos en productos de belleza. Compra shampoos, tratamientos capilares y maquillaje con precios especiales por tiempo limitado.</p>",
         "text_size": "text-base",
         "button_label": "Ver todos los productos",
         "button_link": "",
@@ -1247,22 +1259,11 @@
     "rich_text_JCMTrY": {
       "type": "rich-text",
       "blocks": {
-        "heading_9id9TA": {
-          "type": "heading",
-          "settings": {
-            "heading": "<strong>Somos distribuidores de productos de belleza como maquillaje, skin care y cuidado del cabello</strong>",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h3"
-          }
-        },
         "text_kCdT3B": {
           "type": "text",
           "settings": {
-            "text": "<p>Somos la tienda colombiana líder en distribución de productos de belleza ofrecemos una amplia gama de cosméticos y artículos de cuidado personal para que puedas expresar y realzar tu estilo único. Nuestra tienda online cuenta con una selección inigualable de maquillaje, productos de skincare, cuidado del cabello, y cuidado de las uñas. Además, encontrarás los mejores eléctricos para belleza, todo con la comodidad de comprar desde casa.<br/><br/></p>",
-            "text_size": "text-base",
+            "text": "<h1><strong>Tienda online de productos de belleza en Colombia: maquillaje, cuidado del cabello y skincare original al mejor precio.</strong></h1><p>Compra productos de belleza en Colombia con lo mejor en maquillaje, cuidado del cabello y skincare. Encuentra shampoos, tratamientos capilares, productos para la caída del cabello y sérums con ácido hialurónico para una piel hidratada y luminosa.<br/><br/>Descubre productos originales, precios competitivos y envíos rápidos a todo el país para transformar tu rutina de belleza.</p>",
+            "text_size": "text-inherit",
             "text_line_limit": "none",
             "button_style": "btn--underline",
             "button_icon": "none"
@@ -1280,7 +1281,6 @@
         }
       },
       "block_order": [
-        "heading_9id9TA",
         "text_kCdT3B",
         "button_dCjhxX"
       ],

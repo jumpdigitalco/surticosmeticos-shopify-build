@@ -78,11 +78,17 @@
     "social_tumblr_link": "",
     "social_vimeo_link": "",
     "predictive_search_enabled": true,
-    "predictive_search_type_enabled": false,
+    "predictive_search_type_enabled": true,
     "number_results_to_show": 10,
-    "predictive_search_show_vendor": false,
-    "predictive_search_show_type": true,
+    "predictive_search_show_vendor": true,
+    "predictive_search_show_type": false,
     "predictive_search_show_price": true,
+    "most_searched_keyworkds": "Cebolla, Skincare, Babyliss",
+    "products_recommendations": [
+      "kit-tonicos-pocion-anticaida-y-crecimiento-x2uds",
+      "kit-anticaida-de-romero-anyeluz",
+      "kit-biokeratina-liss-extend-byspro-120ml"
+    ],
     "search_products_column_gap": "2xs",
     "currency_code_enabled": false,
     "currency_hide_trailing_zeros": true,
@@ -107,6 +113,13 @@
       }
     },
     "content_for_index": [],
+    "blocks": {
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {}
+      }
+    },
     "color_schemes": {
       "scheme-1": {
         "settings": {

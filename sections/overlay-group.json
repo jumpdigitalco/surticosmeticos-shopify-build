@@ -22,6 +22,7 @@
         "cart_recommendations_color_scheme": "",
         "cart_recommendations_heading": "Pair Well With",
         "cart_recommendations_limit": 3,
+        "cart_recommendations_products": [],
         "cart_recommendations_layout": "grid",
         "cart_mess_color_scheme": "scheme-2",
         "cart_message": "✌🏼 Free Express Shipping on orders $500!",
@@ -108,6 +109,7 @@
             "layout": "horizontal",
             "title_font": "body-bolder",
             "title_size": "text-base",
+            "icon_color": "#ee3491",
             "icon_1": "check",
             "heading_1": "Modern",
             "icon_2": "check",
@@ -146,7 +148,8 @@
           "settings": {
             "show_quantity_selector": true,
             "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#7916ac"
           }
         }
       },
@@ -173,27 +176,29 @@
         "image": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/POP-UP2.jpg",
+            "image_mobile": "shopify://shop_images/POP-UP2.jpg",
             "image_position": "left"
           }
         },
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "Sign up to get 10% OFF <br>your first order",
-            "text_size": "h2"
+            "heading": "Regístrate ahora y obtén beneficios exclusivos.",
+            "text_size": "h3"
           }
         },
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Sexy and sustainable goodies? Sign me up</p>",
+            "text": "<p>Accede a ofertas anticipadas, lanzamientos, y regalos por compras.</p>",
             "text_size": "text-base"
           }
         },
         "form": {
           "type": "form",
           "settings": {
-            "button_label": "Get 10% OFF",
+            "button_label": "Obtener descuento",
             "button_icon": "none"
           }
         },
@@ -259,6 +264,7 @@
             "heading_size": "h5",
             "description": "<p>Valid for filter </p>",
             "button_label": "Shop",
+            "button_link": "",
             "button_style": "btn--primary",
             "button_icon": "none"
           }
@@ -277,6 +283,7 @@
             "heading_size": "h5",
             "description": "<p>Online exclusive</p>",
             "button_label": "Shop",
+            "button_link": "",
             "button_style": "btn--primary",
             "button_icon": "none"
           }
@@ -295,6 +302,7 @@
             "heading_size": "h5",
             "description": "<p>on all major appliances $500+</p>",
             "button_label": "Shop",
+            "button_link": "",
             "button_style": "btn--primary",
             "button_icon": "none"
           }

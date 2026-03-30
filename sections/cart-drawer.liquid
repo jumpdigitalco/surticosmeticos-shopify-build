@@ -840,17 +840,23 @@
                   -%}
                 </div>
               </div>
-              <form action="{{ routes.cart_url }}" method="POST" novalidate class="drawer__footer-buttons flex gap-2">
-                <a href="{{ routes.cart_url }}" class="btn btn--secondary">
-                  <span class="btn__text">{{ 'general.cart.view_empty_cart' | t }}</span>
+              <form
+                action="{{ routes.cart_url }}"
+                method="POST"
+                novalidate
+                class="drawer__footer-buttons flex gap-2 cart-drawer__footer-form"
+              >
+                <a href="{{ routes.root_url }}" class="btn btn--secondary cart-drawer__footer-continue">
+                  <span class="btn__text">{{ 'general.cart.continue_shopping' | t }}</span>
                 </a>
-                <a
-                  href="{{ routes.root_url }}"
-                  class="btn btn--primary flex-grow"
+                <button
+                  type="submit"
+                  name="checkout"
+                  class="btn btn--primary flex-grow cart-drawer__footer-checkout"
                   aria-label="{{ 'sections.cart.checkout' | t }}"
                 >
                   <span class="btn__text">{{ 'sections.cart.checkout' | t }}</span>
-                </a>
+                </button>
               </form>
             </div>
           </div>

@@ -1,5 +1,5 @@
 
-form[action="/cart"]:hover .btn.btn--secondary::before {
+form.cart-drawer__footer-form:hover .btn.btn--secondary::before {
   background-color: #fff !important;
 }
 .collection-template .collection__toolbar-left .facet-drawer-wrapper:hover .btn.btn--secondary::before {
@@ -14,19 +14,19 @@ form[action="/cart"]:hover .btn.btn--secondary::before {
   transform: none !important;
   transition: none !important;
 }
-form[action="/cart"] a[href="/"].btn.btn--primary.flex-grow,
-form[action="/cart"] a[href="/cart"] {
+form.cart-drawer__footer-form .cart-drawer__footer-checkout,
+form.cart-drawer__footer-form .cart-drawer__footer-continue {
   background-color: #7916ac !important;
   border-color: #7916ac !important;
 }
 .collection__toolbar .facet-drawer-button .btn__text svg,
 .collection__toolbar .facet-drawer-button .btn__text span,
-form[action="/cart"] a[href="/"].btn.btn--primary.flex-grow span,
-form[action="/cart"] a[href="/cart"] span {
+form.cart-drawer__footer-form .cart-drawer__footer-checkout .btn__text,
+form.cart-drawer__footer-form .cart-drawer__footer-continue .btn__text {
   color: #fff !important;
 }
-form[action="/cart"] a[href="/"].btn.btn--primary.flex-grow:hover span,
-form[action="/cart"] a[href="/cart"]:hover span {
+form.cart-drawer__footer-form .cart-drawer__footer-checkout:hover .btn__text,
+form.cart-drawer__footer-form .cart-drawer__footer-continue:hover .btn__text {
   color: #7916ac !important;
 }
 

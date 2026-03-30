@@ -1,10 +1,20 @@
 {%- liquid
-  assign default_placeholder = 'newsletter.label' | t
   assign default_button_label = 'newsletter.button_label' | t
   assign button_label = button_label | default: default_button_label
   assign custom_id = custom_id | default: section.id
   assign form_id = 'ContactSubscribe-' | append: custom_id
   assign button_style = button_style | default: 'btn--primary'
+  assign show_privacy_checkbox = show_privacy_checkbox | default: false
+  if placeholder != blank
+    assign input_placeholder = placeholder
+  else
+    assign input_placeholder = 'newsletter.placeholder' | t
+  endif
+  if privacy_checkbox_label != blank
+    assign privacy_label = privacy_checkbox_label
+  else
+    assign privacy_label = 'newsletter.privacy_consent' | t
+  endif
 -%}
 <div class="newsletter-form">
   {%- form 'customer', id: form_id, is: 'newsletter-form' -%}
@@ -12,7 +22,7 @@
     <div class="newsletter-form__field-wrapper">
       <div class="form-field relative">
         <label class="form-label visually-hidden" for="NewsletterForm-{{ custom_id }}">
-          {{ default_placeholder }}
+          {{ input_placeholder }}
         </label>
         <input
           id="NewsletterForm-{{ custom_id }}"
@@ -31,7 +41,7 @@
           {% elsif form.posted_successfully? %}
             aria-describedby="Newsletter-success--{{ custom_id }}"
           {% endif %}
-          placeholder="{{ 'newsletter.placeholder' | t }}"
+          placeholder="{{ input_placeholder }}"
           required
         >
         {% capture button_attributes %}
@@ -46,7 +56,21 @@
           button_icon: button_icon,
           additional_attributes: button_attributes
         %}
-    
+
+        {%- if show_privacy_checkbox -%}
+          <div class="newsletter-form__privacy">
+            <input
+              type="checkbox"
+              id="Newsletter-privacy-{{ custom_id }}"
+              name="contact[note]"
+              value="{{ privacy_label | escape }}"
+              required
+              aria-required="true"
+            >
+            <label for="Newsletter-privacy-{{ custom_id }}">{{ privacy_label }}</label>
+          </div>
+        {%- endif -%}
+
         <basic-modal class="drawer modal modal--newsletter-alert" id="NewsletterAlertModal-{{ custom_id }}" hidden>
           <div
             class="fixed-overlay"

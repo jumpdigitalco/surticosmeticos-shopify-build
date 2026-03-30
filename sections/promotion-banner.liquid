@@ -28,7 +28,14 @@
         assign alignment_classes = alignment_classes | append: ' lg:text-right lg:items-end'
     endcase
   else
-    assign alignment_classes = 'lg:justify-between lg:text-left lg:items-center'
+    case section.settings.content_alignment
+      when 'left'
+        assign alignment_classes = 'lg:justify-start lg:text-left lg:items-center'
+      when 'center'
+        assign alignment_classes = 'lg:justify-center lg:text-center lg:items-center'
+      when 'right'
+        assign alignment_classes = 'lg:justify-end lg:text-right lg:items-center'
+    endcase
   endif
 
   case section.settings.content_alignment_mobile
@@ -197,11 +204,7 @@
                 assign block_flex_direction = 'flex-col'
               endif
 
-              if section.settings.layout == 'horizontal'
-                assign heading_classes = 'left'
-              else
-                assign heading_classes = section.settings.content_alignment
-              endif
+              assign heading_classes = section.settings.content_alignment
 
               assign mobile_heading_alignment = section.settings.content_alignment_mobile
             %}
@@ -307,7 +310,6 @@
       "type": "select",
       "id": "content_alignment",
       "label": "t:general.content_alignment.label",
-      "visible_if": "{{ section.settings.layout == 'vertical' }}",
       "default": "center",
       "options": [
         {

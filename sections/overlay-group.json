@@ -198,7 +198,7 @@
         "form": {
           "type": "form",
           "settings": {
-            "button_label": "Obtener descuento",
+            "button_label": "Suscribirme",
             "button_icon": "none"
           }
         },

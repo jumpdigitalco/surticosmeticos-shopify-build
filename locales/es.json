@@ -116,7 +116,8 @@
     "success": "Gracias por suscribirte",
     "already_subscribed": "¡Ya te has suscrito!",
     "button_label": "Inscribirse",
-    "placeholder": "Introduce tu correo electrónico"
+    "placeholder": "Email",
+    "privacy_consent": "Acepto el tratamiento de mis datos personales"
   },
   "accessibility": {
     "skip_to_text": "Saltar al contenido",

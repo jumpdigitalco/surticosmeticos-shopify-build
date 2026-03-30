@@ -143,8 +143,10 @@
                     {% render 'newsletter-form',
                       custom_id: 'Popup',
                       hide_label: true,
+                      placeholder: 'Email',
                       button_label: block.settings.button_label,
-                      button_icon: block.settings.button_icon
+                      button_icon: block.settings.button_icon,
+                      show_privacy_checkbox: true
                     %}
                   </div>
                 {%- when 'button' -%}
@@ -497,7 +499,7 @@
           "type": "text",
           "id": "button_label",
           "label": "t:general.button.button_label.label",
-          "default": "Subscribe"
+          "default": "Suscribirme"
         },
         {
           "type": "select",

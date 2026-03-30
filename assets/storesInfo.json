@@ -1,7 +1,7 @@
 {
   "defaultCenter": {
-    "lat": 3.4516,
-    "lng": -76.532
+    "lat": 3.4525,
+    "lng": -76.51
   },
   "stores": [
     {
@@ -10,17 +10,19 @@
       "department": "Valle del Cauca",
       "city": "Cali Valle Del Cauca",
       "phone": "57 317 640 6404",
-      "lat": 3.453163465,
-      "lng": -76.5295090478
+      "hours": "Lunes a Sábado de 8:00am a 7:00pm.",
+      "lat": 3.45426883949949,
+      "lng": -76.52971117757536
     },
     {
-      "name": "C. C. Unico 2",
-      "address": "Cra. 3 # 47D - 88 L205 y L203B",
+      "name": "C. C. Único 2",
+      "address": "Cra. 3 # 47D – 88 L205 & L203B",
       "department": "Valle del Cauca",
       "city": "Cali Valle Del Cauca",
       "phone": "57 317 640 6404",
-      "lat": 3.465669844,
-      "lng": -76.5010279189
+      "hours": "Lunes a Sábado de 9:30am a 9:30pm y Domingos 9:30am a 9:00pm",
+      "lat": 3.469557316008099,
+      "lng": -76.49986263170997
     },
     {
       "name": "Nueva Floresta",
@@ -28,8 +30,9 @@
       "department": "Valle del Cauca",
       "city": "Cali Valle Del Cauca",
       "phone": "57 313 545 8332",
-      "lat": 3.4388,
-      "lng": -76.5009
+      "hours": "Lunes a Sábado de 9:00am a 7:55pm.",
+      "lat": 3.4338271688873854,
+      "lng": -76.49984857430265
     }
   ]
 }

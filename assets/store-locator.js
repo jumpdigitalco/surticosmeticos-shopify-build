@@ -17,15 +17,25 @@ function normalizeText(value) {
   return String(value || "").trim();
 }
 
+function escapeHtml(text) {
+  const div = document.createElement("div");
+  div.textContent = text == null ? "" : String(text);
+  return div.innerHTML;
+}
+
 function createInfoWindowContent(store) {
+  const hoursHtml = store.hours
+    ? `<p><strong>Horario:</strong> ${escapeHtml(store.hours)}</p>`
+    : "";
   return `
     <div class="store-locator__info">
-      <h3 class="store-locator__info-title">${store.name}</h3>
+      <h3 class="store-locator__info-title">${escapeHtml(store.name)}</h3>
       <div class="store-locator__info-body">
-        <p><strong>Direccion:</strong> ${store.address}</p>
-        <p><strong>Departamento:</strong> ${store.department || "N/A"}</p>
-        <p><strong>Ciudad:</strong> ${store.city}</p>
-        <p><strong>Contacto:</strong> ${store.phone}</p>
+        <p><strong>Direccion:</strong> ${escapeHtml(store.address)}</p>
+        <p><strong>Departamento:</strong> ${escapeHtml(store.department || "N/A")}</p>
+        <p><strong>Ciudad:</strong> ${escapeHtml(store.city)}</p>
+        <p><strong>Contacto:</strong> ${escapeHtml(store.phone)}</p>
+        ${hoursHtml}
       </div>
       <a class="store-locator__info-link" href="https://www.google.com/maps/search/?api=1&query=${store.lat},${store.lng}" target="_blank" rel="noopener noreferrer">Ver en Google Maps</a>
     </div>
@@ -40,12 +50,16 @@ function renderStoreList(container, stores, onSelectStore) {
     const item = document.createElement("li");
     item.className = "store-list-item";
     item.dataset.index = String(index);
+    const hoursLine = store.hours
+      ? `<p><strong>Horario:</strong> ${escapeHtml(store.hours)}</p>`
+      : "";
     item.innerHTML = `
-      <strong>${store.name}</strong>
-      <p><strong>Direccion:</strong> ${store.address}</p>
-      <p><strong>Departamento:</strong> ${store.department || "N/A"}</p>
-      <p><strong>Ciudad:</strong> ${store.city}</p>
-      <p><strong>Contacto:</strong> ${store.phone}</p>
+      <strong>${escapeHtml(store.name)}</strong>
+      <p><strong>Direccion:</strong> ${escapeHtml(store.address)}</p>
+      <p><strong>Departamento:</strong> ${escapeHtml(store.department || "N/A")}</p>
+      <p><strong>Ciudad:</strong> ${escapeHtml(store.city)}</p>
+      <p><strong>Contacto:</strong> ${escapeHtml(store.phone)}</p>
+      ${hoursLine}
     `;
 
     item.addEventListener("click", () => onSelectStore(index));

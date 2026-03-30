@@ -332,6 +332,21 @@
   padding-inline-end: 52px;
 }
 
+/* Con “tipo de producto” + sugerencias: el tema reserva padding al input; custom lo pisaba y el texto se solapaba al <select> */
+.header__search .search__types {
+  z-index: 2;
+}
+
+.header__search .search__types + .search__input {
+  padding-inline-start: 9.6rem;
+}
+
+@media (min-width: 640px) {
+  .header__search .search__types + .search__input {
+    padding-inline-start: 18.4rem;
+  }
+}
+
 .header__search .search__input::placeholder {
   color: #7a7a85;
   opacity: 1;

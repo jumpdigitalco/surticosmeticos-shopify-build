@@ -116,7 +116,8 @@
     "success": "Thanks for subscribing",
     "already_subscribed": "You have already subscribed!",
     "button_label": "Sign up",
-    "placeholder": "Enter your email"
+    "placeholder": "Enter your email",
+    "privacy_consent": "I accept the processing of my personal data"
   },
   "accessibility": {
     "skip_to_text": "Skip to content",

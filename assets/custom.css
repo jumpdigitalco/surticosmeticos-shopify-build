@@ -1,7 +1,36 @@
-/* Custom overrides
-   Agrega aqui los ajustes visuales del proyecto. */
 
-/* PDP — título del producto: Poppins Medium, 28px mobile / 30px desktop, #452F48 */
+form[action="/cart"]:hover .btn.btn--secondary::before {
+  background-color: #fff !important;
+}
+.collection-template .collection__toolbar-left .facet-drawer-wrapper:hover .btn.btn--secondary::before {
+  background-color: #7916ac !important;
+  border-color: #7916ac !important;
+}
+
+.collection__toolbar .facet-drawer-wrapper .btn--icon:before,
+.collection__toolbar .facet-drawer-wrapper .btn--icon {
+  background-color: #7916ac !important;
+  border-color: #7916ac !important;
+  transform: none !important;
+  transition: none !important;
+}
+form[action="/cart"] a[href="/"].btn.btn--primary.flex-grow,
+form[action="/cart"] a[href="/cart"] {
+  background-color: #7916ac !important;
+  border-color: #7916ac !important;
+}
+.collection__toolbar .facet-drawer-button .btn__text svg,
+.collection__toolbar .facet-drawer-button .btn__text span,
+form[action="/cart"] a[href="/"].btn.btn--primary.flex-grow span,
+form[action="/cart"] a[href="/cart"] span {
+  color: #fff !important;
+}
+form[action="/cart"] a[href="/"].btn.btn--primary.flex-grow:hover span,
+form[action="/cart"] a[href="/cart"]:hover span {
+  color: #7916ac !important;
+}
+
+
 .section-main-product .product__block--title .product__title {
   font-weight: 500;
   font-style: normal;
@@ -18,7 +47,6 @@
   }
 }
 
-/* PDP — línea Tipo: etiqueta Regular 14px; valor bold 14px; color #452F48 */
 .section-main-product .product__block--meta .product__type {
   display: inline-flex;
   flex-wrap: wrap;
@@ -57,12 +85,10 @@
   display: none;
 }
 
-/* PDP — Icon with text: color de iconos (#2E0735 por defecto; el admin puede sobreescribir vía --icon-with-text-icon) */
 .section-main-product .product__block--icon-with-text .icon-with-text .icon {
   color: var(--icon-with-text-icon, #2e0735);
 }
 
-/* PDP — Icon with text: textos de cada ítem 15px peso normal, #2E0735 */
 .section-main-product .product__block--icon-with-text .icon-with-text__item .inline-richtext {
   font-size: 15px;
   font-weight: 400 !important;
@@ -70,7 +96,6 @@
   line-height: 1.45;
 }
 
-/* PDP — Social sharing: oculto en desktop, visible en móvil (alineado a breakpoint md del tema) */
 .section-main-product .product__block--social_sharing {
   display: none;
 }
@@ -81,7 +106,6 @@
   }
 }
 
-/* PDP — Product info card (snippet product-info-card): icono #7916AC; textos 15px; flecha fondo #EDDCEB */
 .section-main-product .product-info-card__icon .icon {
   color: #7916ac;
 }
@@ -99,7 +123,6 @@
   background-color: #e5d4e3;
 }
 
-/* PDP — Galería: borde de miniaturas #7916AC (incluye slide activo; el tema usa foreground en :thumb-active) */
 .section-main-product .product__media-gallery-thumbails .product__thumbs-container:after {
   border-color: #7916ac;
 }
@@ -108,7 +131,6 @@
   border-color: #7916ac;
 }
 
-/* PDP — Títulos de acordeones (Descripción, Detalles, etc.): semibold 16px móvil / 22px desktop */
 .section-main-product .accordion-details__summary h2,
 .section-collapsible-tabs .accordion-details__summary h2 {
   font-size: 16px;
@@ -123,13 +145,11 @@
   }
 }
 
-/* PDP — Icono + de acordeones (Descripción, Detalles, …) */
 .section-main-product .accordion-details__summary .icon-plus-toggle,
 .section-collapsible-tabs .accordion-details__summary .icon-plus-toggle {
   color: #2e0735;
 }
 
-/* PDP — Texto del contenido de acordeones (cuerpo y enlaces en .rte) */
 .section-main-product .accordion-details__content.rte,
 .section-collapsible-tabs .accordion-details__content.rte,
 .featured-product .accordion-details__content.rte,
@@ -151,14 +171,12 @@
   color: #2e0735;
 }
 
-/* Recogida en tienda — icono tienda (storefront) */
 .section-main-product .pickup-availability-icon .icon-storefront,
 .featured-product .pickup-availability-icon .icon-storefront,
 .quick-view .pickup-availability-icon .icon-storefront {
   color: #7916ac;
 }
 
-/* PDP / vista rápida / destacado — Variantes: valor actual (ej. 250ml, Rojo) en negrita + subrayado */
 .section-main-product variant-selects .form__label [data-selected-swatch-value],
 .featured-product variant-selects .form__label [data-selected-swatch-value],
 .quick-view variant-selects .form__label [data-selected-swatch-value] {
@@ -168,7 +186,6 @@
   color: #452f48;
 }
 
-/* Pastillas (Tamaño, etc.): borde morado + texto morado al elegir; sin relleno invertido del tema */
 .section-main-product .product-form__input--button,
 .featured-product .product-form__input--button,
 .quick-view .product-form__input--button {
@@ -234,7 +251,6 @@
   background-color: rgb(var(--color-background));
 }
 
-/* Swatches de color: anillo exterior más oscuro al seleccionar (hueco blanco lo aporta el tema) */
 .section-main-product .product-form__input--color input[type='radio']:checked + label .swatch-color,
 .section-main-product .product-form__input--swatch input[type='radio']:checked + label .swatch-color,
 .featured-product .product-form__input--color input[type='radio']:checked + label .swatch-color,
@@ -244,8 +260,6 @@
   --active-shadow-color: #2e0735;
 }
 
-/* Agregar al carrito: fondo desde bloque Buy buttons (--product-atc-btn-bg) o #7916AC; texto 15px Medium */
-/* Sin animación ::before del tema en hover (así el color se mantiene al pasar el cursor) */
 .product-form .product-form__submit.btn--primary::before,
 .product-form .product-form__submit.btn--secondary::before {
   display: none;
@@ -271,13 +285,11 @@
   opacity: 1;
 }
 
-/* PDP — precio: semibold (600) */
 .section-main-product .product__block--price .f-price--large,
 .section-main-product .product__block--price .f-price--large .f-price-item {
   font-weight: 600;
 }
 
-/* PDP — precio con descuento: final #EE3491 20px móvil / 28px desktop; tachado #949494 15px / 18px */
 .section-main-product .f-price--large.f-price--on-sale .f-price-item--sale {
   color: #ee3491;
   font-size: 20px;
@@ -308,7 +320,6 @@
   text-decoration-color: #949494;
 }
 
-/* Header search - unified style desktop/mobile */
 .header__search .search__form {
   width: 382px;
   min-width: 382px;
@@ -332,7 +343,6 @@
   padding-inline-end: 52px;
 }
 
-/* Con “tipo de producto” + sugerencias: el tema reserva padding al input; custom lo pisaba y el texto se solapaba al <select> */
 .header__search .search__types {
   z-index: 2;
 }
@@ -371,6 +381,8 @@
   width: 20px;
   height: 20px;
 }
+
+
 
 @media (max-width: 1023px) {
   .header__search {
@@ -449,7 +461,6 @@
   }
 }
 
-/* Footer newsletter brand image */
 .footer-newsletter__brand-image {
   margin-bottom: 12px;
 }
@@ -482,7 +493,6 @@
   }
 }
 
-/* Colecciones — Rich text (sección al final de la plantilla): ancho máx. 750px, márgenes y paddings */
 .collection-template #MainContent .section-rich-text {
   --page-padding: 0 !important;
   --section-padding-top: 0 !important;
@@ -586,7 +596,6 @@
   color: #2e0735 !important;
 }
 
-/* Colecciones — botón «Filtrar» (píldora): fondo #EDDCEB */
 .collection-template .facet-drawer-button {
   background-color: #eddceb !important;
   border: 1px solid #eddceb !important;
@@ -606,7 +615,6 @@
   color: #2e0735 !important;
 }
 
-/* Crédito Jump Digital — mismo bloque que copyright en desktop; debajo en móvil; color blanco */
 .footer__copyright-content .footer__jump-digital-text,
 .footer__copyright-content .footer__jump-digital-text a {
   color: #fff;
@@ -643,7 +651,6 @@
   text-decoration-color: rgba(255, 255, 255, 0.85);
 }
 
-/* Badges vitrina / PDP — píldora Nuevo (lila) y Oferta (rosa). Carga duplicada de custom.css al final del body para ganar a section-*.css */
 body .product-card .product-card__badge span.f-badge--new,
 body .product-card .product-card__badge span.f-badge--sale,
 body .product-card__badge span.f-badge--new,
@@ -660,7 +667,6 @@ body .product__badges span.f-badge--sale {
   box-shadow: none !important;
 }
 
-/* Nuevo: fondo rosa claro, texto negro */
 body .product-card .product-card__badge span.f-badge--new,
 body .product-card__badge span.f-badge--new,
 body .product__badges span.f-badge--new {
@@ -669,7 +675,6 @@ body .product__badges span.f-badge--new {
   background: #ffbbf7 !important;
 }
 
-/* Oferta: fondo fucsia, texto blanco */
 body .product-card .product-card__badge span.f-badge--sale,
 body .product-card__badge span.f-badge--sale,
 body .product__badges span.f-badge--sale {
@@ -678,10 +683,6 @@ body .product__badges span.f-badge--sale {
   background: #ee3491 !important;
 }
 
-/*
- * Botón agregar al carrito en tarjetas de producto (vitrinas): solo icono (mismo SVG
- * que el carrito del header), texto oculto con .visually-hidden para accesibilidad.
- */
 body .product-card .product-card__main-actions .product-card__atc.btn,
 body .product-card .product-card__list-actions .product-card__list-atc.btn {
   background-color: #7916ac !important;
@@ -708,7 +709,6 @@ body .product-card .product-card__main-actions .product-card__atc.btn--secondary
   background-color: rgba(255, 255, 255, 0.25);
 }
 
-/* Botón solo icono: ancho al contenido, circular, alineado a la derecha */
 body .product-card .product-card__main-actions {
   justify-content: flex-end !important;
 }
@@ -750,13 +750,11 @@ body .product-card .product-card__list-actions .product-card__atc--icon-only.btn
   max-width: 38px !important;
 }
 
-/* Vitrinas: borde en tarjetas de producto */
 body .product-card {
   border: 1px solid #f7f7f5;
   box-sizing: border-box;
 }
 
-/* Vitrinas: nombre de marca (vendor) */
 body .product-card .product-card__vendor,
 body .product-card .product-card__vendor a {
   font-size: 12px !important;
@@ -765,13 +763,11 @@ body .product-card .product-card__vendor a {
   text-transform: capitalize !important;
 }
 
-/* Vitrinas: nombre del producto (título) */
 body .product-card .product-card__title.text-pcard-title {
   color: #452f48 !important;
   font-size: 15px !important;
   font-weight: 500 !important;
   line-height: 1.35;
-  /* Reserva alto fijo (2 líneas) para alinear tarjetas con títulos cortos o largos */
   min-height: calc(15px * 1.35 * 2);
 }
 
@@ -792,7 +788,6 @@ body .product-card .product-card__title.text-pcard-title a {
   word-break: break-word;
 }
 
-/* Móvil: botón ATC sin transparencias (borde sólido, sin capa ::before semitransparente) */
 @media (max-width: 767.98px) {
   body .product-card .product-card__main-actions .product-card__atc.btn--white::before,
   body .product-card .product-card__main-actions .product-card__atc.btn--primary::before,
@@ -812,3 +807,5 @@ body .product-card .product-card__title.text-pcard-title a {
     border: 1px solid #7916ac !important;
   }
 }
+
+

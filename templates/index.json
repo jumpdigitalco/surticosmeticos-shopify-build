@@ -161,7 +161,7 @@
         "collection_ydJPzX": {
           "type": "collection",
           "settings": {
-            "collection": "accesorios-maquillaje",
+            "collection": "lo-mas-nuevo",
             "title": "Lo Nuevo",
             "show_banner": false,
             "color_scheme": "scheme-inverse",
@@ -189,7 +189,7 @@
         "collection_neM6w8": {
           "type": "collection",
           "settings": {
-            "collection": "shampoo",
+            "collection": "lo-mas-vendido",
             "title": "Lo Más Vendido",
             "show_banner": false,
             "color_scheme": "scheme-1",
@@ -820,6 +820,7 @@
       "blocks": {
         "heading_neHCyT": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "heading": "A CUOTAS SIN INTERESES",
             "highlight_style": "none",
@@ -855,7 +856,7 @@
         "container": "full",
         "color_scheme": "scheme-4",
         "layout": "horizontal",
-        "content_alignment": "center",
+        "content_alignment": "right",
         "content_alignment_mobile": "left",
         "image": "shopify://shop_images/banner-addi-pc.jpg",
         "image_mobile": "shopify://shop_images/banner-addi-mobile.jpg",
@@ -1016,71 +1017,56 @@
         "feed_QTHQWE": {
           "type": "feed",
           "settings": {
-            "link": "",
-            "author": "Stephanie",
-            "account": "@glamourgirl",
-            "icon": "tiktok",
-            "product": ""
+            "video": "shopify://files/videos/Video 1- pocion sport.mp4",
+            "link": "https://www.instagram.com/reel/DJmfnGNtpap/?igsh=MTl1aWZhNmFkanFwNA==",
+            "author": "Surticosmeticos",
+            "account": "@surticosmeticos",
+            "icon": "instagram",
+            "product": "tratamiento-de-ultra-proteccion-sport-pocion-x250ml"
           }
         },
         "feed_yq8ngT": {
           "type": "feed",
           "settings": {
-            "link": "",
-            "author": "Ella Kate",
-            "account": "@fashionista",
+            "video": "shopify://files/videos/Video 2- pestañinas.mp4",
+            "link": "https://vt.tiktok.com/ZSH1NnQ3S/",
+            "author": "Surticosmeticos",
+            "account": "@surticosmeticos",
             "icon": "tiktok",
-            "product": ""
+            "product": "pestanina-lash-max-factor-cepillo-y-peine-x15ml"
           }
         },
         "feed_FeRLDT": {
           "type": "feed",
           "settings": {
-            "link": "",
-            "author": "Sara Jane",
-            "account": "@makeupdiva",
+            "video": "shopify://files/videos/Video 3- skalas.mp4",
+            "link": "https://vt.tiktok.com/ZSH1NVnBD/",
+            "author": "Surticosmeticos",
+            "account": "@surticosmeticos",
             "icon": "tiktok",
-            "product": ""
+            "product": "trata-mais-crespinhos-x1000gr-skala"
           }
         },
         "feed_nDDeXG": {
           "type": "feed",
           "settings": {
-            "link": "",
-            "author": "Lucy Belle",
-            "account": "@trendygirl",
+            "video": "shopify://files/videos/Video 4- mascarilla ritual.mp4",
+            "link": "https://vt.tiktok.com/ZSH1NuQYP/",
+            "author": "Surticosmeticos",
+            "account": "@Surticosmeticos",
             "icon": "tiktok",
-            "product": ""
+            "product": "mascarilla-bomba-botanica-s-o-s-ritual-botanico"
           }
         },
         "feed_ibdpEr": {
           "type": "feed",
           "settings": {
-            "link": "",
-            "author": "Ava Marie",
-            "account": "@lovelyvibes",
-            "icon": "tiktok",
-            "product": ""
-          }
-        },
-        "feed_tenmdB": {
-          "type": "feed",
-          "settings": {
-            "link": "",
-            "author": "Emma Rose",
-            "account": "@sparklequeen",
-            "icon": "tiktok",
-            "product": ""
-          }
-        },
-        "feed_jq8bnQ": {
-          "type": "feed",
-          "settings": {
-            "link": "",
-            "author": "Ruby Claire",
-            "account": "@chicandunique",
-            "icon": "tiktok",
-            "product": ""
+            "video": "shopify://files/videos/Video 5- define tus rizos.mp4",
+            "link": "https://www.instagram.com/reels/DMvVmGvMCZ0/",
+            "author": "Surticosmeticos",
+            "account": "@surticosmeticas",
+            "icon": "instagram",
+            "product": "crema-para-peinar-lmar-etniker-x290g"
           }
         }
       },
@@ -1089,9 +1075,7 @@
         "feed_yq8ngT",
         "feed_FeRLDT",
         "feed_nDDeXG",
-        "feed_ibdpEr",
-        "feed_tenmdB",
-        "feed_jq8bnQ"
+        "feed_ibdpEr"
       ],
       "settings": {
         "container": "fixed",
@@ -1099,7 +1083,7 @@
         "section_header_alignment": "center",
         "section_header_alignment_mobile": "inherit",
         "subheading": "",
-        "heading": "What Trending On Social",
+        "heading": "Tendencias",
         "highlight_style": "none",
         "highlight_font_style": "italic",
         "highlight_style_color": "",
@@ -1120,7 +1104,7 @@
         "swipe_on_mobile": true,
         "show_progress_bar": true,
         "padding_top": 60,
-        "padding_bottom": 60,
+        "padding_bottom": 0,
         "show_section_divider": false,
         "divider_width": "fixed"
       }
@@ -1283,6 +1267,12 @@
       "block_order": [
         "text_kCdT3B",
         "button_dCjhxX"
+      ],
+      "custom_css": [
+        "h1{line-height: 30px;}",
+        " h1 strong {font-size: 25px;}",
+        "p {font-size: 13px;}",
+        "@media (max-width: 768px) {h1 strong {font-size: 15px; line-height: 1; }}"
       ],
       "name": "t:sections.rich-text.name",
       "settings": {

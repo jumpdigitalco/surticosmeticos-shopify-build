@@ -45,6 +45,7 @@
     "blocks_corner_radius": "slightly",
     "pcard_corner_radius": "slightly",
     "badges_corner_radius": "round",
+    "enable_page_transition": false,
     "pcard_style": "card",
     "pcard_color_scheme": "scheme-4",
     "pcard_show_vendor": true,
@@ -60,7 +61,7 @@
     "product_new_tags": "Nuevo",
     "product_hot_tags": "Oferta",
     "color_swatch_trigger": "Color",
-    "swatch_list": "Almond:#d4b896\nAmarillo:#f5e6a3\nArena:#e8dcc8\nAvellana:#8b6f47\nAzul:#2563eb\nBanana:#f5e6a8\nBeige:#d4c4a8\nBlanco:#f8f8f8\nBronce:#cd7f32\nBrown:#5d4037\nCacao:#4e342e\nCafé:#4a3728\nCafé Claro:#8d6e63\nCafé Express:#3e2723\nCafé Medio:#5d4037\nCafé Oscuro:#3e2723\nCamel:#c19a6b\nCanela:#a0522d\nCaramel:#c68e59\nCaramelo:#b8956a\nCherry:#b71c3a\nChocolate:#4a2c2a\nClaro 1:#f5e0d0\nClaro 2:#f8e8dc\nCocoa:#6d4c41\nCoffee:#4e342e\nCream:#f5f0e6\nDefault Title:#d0d0d0\nDurazno:#e8b896\nGitano:#c4956a\nLight:#e8d5c4\nMediano 1:#c9a07a\nMediano 2:#a67c52\nMedium:#b8956a\nMedium Beige:#d4b896\nMiel:#d4a76a\nMorado:#6a4c93\nIce:#dceef5\nPetal:#e8b4b8\nNatural:#c9a88a\nNature:#a67c52\nNegro:#1c1c1c\nNude:#dcb8a0\nNude Beige:#d4b8a0\nOlive:#6b5d4f\nOrange:#e07020\nOscuro 1:#5c4033\nOscuro 2:#3d2817\nPerla:#f0e8dc\nPink:#e8a0a8\nPorcelain:#fdeee4\nSalmón:#e8a898\nSand:#d4c4a8\nSándalo:#8b6f5a\nTraslucent:#f2e8dc\nTraslucido:#f0e6d8\nTrigo:#c9a96b\nVainilla:#f3e5d0\nWarm Beige:#d4b896\nMoon:#d4dce6\nRust:#a63d2b\nCaoba:#5c3d2e\nLate:#c4a484\nPeaking:#e8b4a8\nMocca:#6f4e37\nHot Honney:#e8a838\nAlmendra:#d4b896",
+    "swatch_list": "1 Natural:#e8dcc8\n3 Arena:#e8dcc8\n4 Almendra:#e8dcc8\n5 Aceituna:#e8dcc8\n6 Canela:#e8dcc8\n7 Tostado:#e8dcc8\n8 Moka:#e8dcc8\n9 Ébano:#e8dcc8\n10 Ámbar:#e8dcc8\n2 Beige:#e8dcc8",
     "quick_view_type": "modal",
     "cart_type": "drawer",
     "cart_icon": "shopping-bag",
@@ -77,7 +78,7 @@
     "social_pinterest_link": "",
     "social_tumblr_link": "",
     "social_vimeo_link": "",
-    "predictive_search_enabled": true,
+    "predictive_search_enabled": false,
     "predictive_search_type_enabled": true,
     "number_results_to_show": 10,
     "predictive_search_show_vendor": true,
@@ -116,6 +117,11 @@
     "blocks": {
       "13768625480086291342": {
         "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {}
+      },
+      "12948015482042402483": {
+        "type": "shopify://apps/mercado-pago-antifraud-plus/blocks/embed-block/b19ea721-f94a-4308-bee5-0057c043bac5",
         "disabled": false,
         "settings": {}
       }

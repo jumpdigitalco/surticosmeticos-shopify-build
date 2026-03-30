@@ -844,9 +844,13 @@
                 <a href="{{ routes.cart_url }}" class="btn btn--secondary">
                   <span class="btn__text">{{ 'general.cart.view_empty_cart' | t }}</span>
                 </a>
-                <button class="btn btn--primary flex-grow" type="submit" name="checkout">
+                <a
+                  href="{{ routes.root_url }}"
+                  class="btn btn--primary flex-grow"
+                  aria-label="{{ 'sections.cart.checkout' | t }}"
+                >
                   <span class="btn__text">{{ 'sections.cart.checkout' | t }}</span>
-                </button>
+                </a>
               </form>
             </div>
           </div>

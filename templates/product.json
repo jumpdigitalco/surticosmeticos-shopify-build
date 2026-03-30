@@ -100,8 +100,8 @@
             "heading_1": "Despachos rápidos",
             "icon_2": "arrow-up-left",
             "heading_2": "Cambios sin complicaciones",
-            "icon_3": "star-four",
-            "heading_3": ""
+            "icon_3": "currency-circle-dollar",
+            "heading_3": "Pagos seguros y confiables"
           }
         },
         "pickup_availability": {
@@ -156,6 +156,7 @@
         },
         "collapsible_tab_LJEHcH": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Detalles",
             "heading_size": "h4",

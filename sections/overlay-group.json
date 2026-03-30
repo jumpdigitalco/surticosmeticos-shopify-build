@@ -84,7 +84,7 @@
           "settings": {
             "show_soldout_badge": true,
             "show_sale_badge": true,
-            "sale_badge_type": "text"
+            "sale_badge_type": "percentage"
           }
         },
         "title": {

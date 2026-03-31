@@ -219,7 +219,9 @@
         "collection_neM6w8",
         "collection_ydJPzX"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".swiper-button {background: #eddceb; border: none;}"
+      ],
       "settings": {
         "container": "fixed",
         "color_scheme": "scheme-1",
@@ -844,7 +846,7 @@
           "settings": {
             "button_label": "Explorar",
             "button_link": "shopify://collections",
-            "button_style": "btn--secondary",
+            "button_style": "btn--primary",
             "button_icon": "none"
           }
         }
@@ -1009,6 +1011,42 @@
         "max_height_mobile": 500,
         "padding_top": 40,
         "padding_bottom": 60,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "horizontal_products_list_wMc9wD": {
+      "type": "horizontal-products-list",
+      "name": "t:sections.horizontal-products-list.presets.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "collection": "descuento-marzo",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "Descuentos de Vacaciones",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h1",
+        "description": "",
+        "text_size": "text-sm",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--underline",
+        "button_icon": "none",
+        "max_height": 0,
+        "pcard_button_type": "icon",
+        "pcard_title_line_limit": "1-line",
+        "limit": 9,
+        "columns": 3,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "max_height_mobile": 0,
+        "padding_top": 50,
+        "padding_bottom": 50,
         "show_section_divider": false,
         "divider_width": "fixed"
       }
@@ -1240,42 +1278,6 @@
         "divider_width": "fixed",
         "padding_top": 60,
         "padding_bottom": 60
-      }
-    },
-    "horizontal_products_list_wMc9wD": {
-      "type": "horizontal-products-list",
-      "name": "t:sections.horizontal-products-list.presets.name",
-      "settings": {
-        "container": "fixed",
-        "color_scheme": "",
-        "collection": "descuento-marzo",
-        "section_header_alignment": "left",
-        "section_header_alignment_mobile": "inherit",
-        "subheading": "",
-        "heading": "Descuentos de Vacaciones",
-        "highlight_style": "none",
-        "highlight_font_style": "italic",
-        "highlight_style_color": "",
-        "highlight_text_color": "",
-        "heading_size": "h1",
-        "description": "",
-        "text_size": "text-sm",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "btn--underline",
-        "button_icon": "none",
-        "max_height": 0,
-        "pcard_button_type": "icon",
-        "pcard_title_line_limit": "1-line",
-        "limit": 9,
-        "columns": 3,
-        "column_gap": "medium",
-        "row_gap": "inherit",
-        "max_height_mobile": 0,
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "show_section_divider": false,
-        "divider_width": "fixed"
       }
     },
     "rich_text_JCMTrY": {

@@ -14,6 +14,7 @@
     "logo_width": 250,
     "logo_mobile": "shopify://shop_images/Group_3.svg",
     "logo_width_mobile": 105,
+    "favicon": "shopify://shop_images/Favicon-surticosmeticos.svg",
     "color_badge_new": "#64b7a6",
     "color_badge_coming_soon": "#8d55cb",
     "color_cart_bubble": "#c4301c",

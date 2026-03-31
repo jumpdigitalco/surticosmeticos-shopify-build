@@ -67,6 +67,7 @@
         },
         "icon_with_text": {
           "type": "icon-with-text",
+          "disabled": true,
           "settings": {
             "layout": "horizontal",
             "title_font": "body-bolder",
@@ -120,10 +121,10 @@
         "product_info_card_store": {
           "type": "product_info_card",
           "settings": {
-            "heading": "Recogida en tienda",
-            "subheading": "Usualmente listo en 24 horas",
-            "link": "",
-            "link_new_tab": false
+            "heading": "Consulta tiempo de entrega",
+            "subheading": "Usualmente despachamos en 24 horas",
+            "link": "shopify://pages/politicas-de-envios",
+            "link_new_tab": true
           }
         },
         "complementary": {

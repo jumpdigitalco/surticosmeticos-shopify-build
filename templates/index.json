@@ -16,8 +16,8 @@
           "type": "banner-card",
           "settings": {
             "color_scheme": "",
-            "image": "shopify://shop_images/BANNER-MAYBELLINE-PRINCIPAL-GRANGE-desktop.png",
-            "image_mobile": "shopify://shop_images/BANNER-MAYBELLINE-PRINCIPAL-GRANGE-desktop.png",
+            "image": "shopify://shop_images/BANNER-A1-descuentos-bajo-el-sol-desktop.jpg",
+            "image_mobile": "shopify://shop_images/BANNER-NUEVO-descuentos-bajo-el-sol-mobile.jpg",
             "image_overlay_opacity": 0,
             "column_span": 4,
             "row_span": 2,
@@ -27,7 +27,7 @@
             "content_alignment": "left",
             "content_position_mobile": "middle-center",
             "content_alignment_mobile": "center",
-            "card_link": "shopify://collections/maybelline",
+            "card_link": "shopify://collections/descuento-marzo",
             "subheading": "",
             "subheading_style": "",
             "heading": "",
@@ -158,34 +158,6 @@
     "featured_collection_bdaamt": {
       "type": "featured-collection",
       "blocks": {
-        "collection_ydJPzX": {
-          "type": "collection",
-          "settings": {
-            "collection": "lo-mas-nuevo",
-            "title": "Lo Nuevo",
-            "show_banner": false,
-            "color_scheme": "scheme-inverse",
-            "card_link": "",
-            "image_overlay_opacity": 10,
-            "content_position": "split-bottom-button",
-            "content_alignment": "left",
-            "subheading": "Add a tagline",
-            "subheading_style": "",
-            "heading": "Image card",
-            "highlight_style": "none",
-            "highlight_font_style": "italic",
-            "highlight_style_color": "",
-            "highlight_text_color": "",
-            "heading_size": "h2",
-            "heading_size_mobile": "inherit",
-            "heading_size_custom": 18,
-            "description": "",
-            "text_size": "text-base",
-            "button_label": "Button label",
-            "button_style": "btn--primary",
-            "button_icon": "none"
-          }
-        },
         "collection_neM6w8": {
           "type": "collection",
           "settings": {
@@ -213,11 +185,39 @@
             "button_style": "btn--primary",
             "button_icon": "none"
           }
+        },
+        "collection_ydJPzX": {
+          "type": "collection",
+          "settings": {
+            "collection": "lo-mas-nuevo",
+            "title": "Lo Nuevo",
+            "show_banner": false,
+            "color_scheme": "scheme-inverse",
+            "card_link": "",
+            "image_overlay_opacity": 10,
+            "content_position": "split-bottom-button",
+            "content_alignment": "left",
+            "subheading": "Add a tagline",
+            "subheading_style": "",
+            "heading": "Image card",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "h2",
+            "heading_size_mobile": "inherit",
+            "heading_size_custom": 18,
+            "description": "",
+            "text_size": "text-base",
+            "button_label": "Button label",
+            "button_style": "btn--primary",
+            "button_icon": "none"
+          }
         }
       },
       "block_order": [
-        "collection_ydJPzX",
-        "collection_neM6w8"
+        "collection_neM6w8",
+        "collection_ydJPzX"
       ],
       "custom_css": [],
       "settings": {
@@ -226,13 +226,13 @@
         "section_header_alignment": "left",
         "section_header_alignment_mobile": "inherit",
         "subheading": "",
-        "heading": "Explora lo más buscado en belleza",
+        "heading": "Lo más buscado en belleza",
         "highlight_style": "none",
         "highlight_font_style": "italic",
         "highlight_style_color": "",
         "highlight_text_color": "",
         "heading_size": "h2",
-        "description": "<p>Descubre nuestra selección de productos de belleza para el cuidado del cabello, maquillaje y skincare.</p>",
+        "description": "<p>Selección de productos para el cuidado del cabello, maquillaje y skincare.</p>",
         "text_size": "text-base",
         "button_label": "",
         "button_link": "",
@@ -262,14 +262,15 @@
           "type": "featured_collection",
           "settings": {
             "collection": "tratamientos",
-            "title": "Tratamientos"
+            "image": "shopify://shop_images/Tratamientos.webp",
+            "title": "Tratamiento"
           }
         },
         "featured_collection_qGE3Xd": {
           "type": "featured_collection",
           "settings": {
             "collection": "bases",
-            "image": "shopify://shop_images/bases_-_copia.png",
+            "image": "shopify://shop_images/Bases_maquillaje.webp",
             "title": "Bases"
           }
         },
@@ -277,7 +278,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "shampoo",
-            "image": "shopify://shop_images/shampoo.png",
+            "image": "shopify://shop_images/shampoo_capilar.webp",
             "title": "Shampoo"
           }
         },
@@ -285,7 +286,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "tintes-y-decolorantes",
-            "image": "shopify://shop_images/tintes.png",
+            "image": "shopify://shop_images/tintes_capilar.webp",
             "title": "Tintes"
           }
         },
@@ -300,7 +301,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "planchas",
-            "image": "shopify://shop_images/planchas.png",
+            "image": "shopify://shop_images/plancha_capilar.webp",
             "title": "Planchas"
           }
         },
@@ -308,7 +309,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "pestaninas",
-            "image": "shopify://shop_images/pestaninas.png",
+            "image": "shopify://shop_images/pestanina_maquillaje.webp",
             "title": "Pestañinas"
           }
         },
@@ -316,7 +317,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "keratinas",
-            "image": "shopify://shop_images/keratinas.png",
+            "image": "shopify://shop_images/keratina_capilar.webp",
             "title": "Keratinas"
           }
         },
@@ -324,7 +325,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "esmaltes",
-            "image": "shopify://shop_images/esmaltes_-_copia.png",
+            "image": "shopify://shop_images/unas_esmalte.webp",
             "title": "Esmaltes"
           }
         },
@@ -360,6 +361,7 @@
           "type": "featured_collection",
           "settings": {
             "collection": "brochas",
+            "image": "shopify://shop_images/brochas_maquillaje.webp",
             "title": "Brochas"
           }
         }
@@ -577,7 +579,7 @@
         "section_header_alignment": "left",
         "section_header_alignment_mobile": "inherit",
         "subheading": "",
-        "heading": "Tratamientos para la caída del cabello.",
+        "heading": "Para la caída del cabello.",
         "highlight_style": "none",
         "highlight_font_style": "italic",
         "highlight_style_color": "",
@@ -827,13 +829,13 @@
             "highlight_font_style": "italic",
             "highlight_style_color": "",
             "highlight_text_color": "",
-            "heading_size": "h2"
+            "heading_size": "h5"
           }
         },
         "text_6irLkJ": {
           "type": "text",
           "settings": {
-            "text": "<p>Compra eso que tanto quieres y empieza a pagar dentro de 1 mes, sin intereses* Aplican TYC.</p>",
+            "text": "<p><strong>Compra a cuotas sin intereses</strong>* Aplican TYC.</p>",
             "text_color": "base-text"
           }
         },
@@ -1240,6 +1242,42 @@
         "padding_bottom": 60
       }
     },
+    "horizontal_products_list_wMc9wD": {
+      "type": "horizontal-products-list",
+      "name": "t:sections.horizontal-products-list.presets.name",
+      "settings": {
+        "container": "fixed",
+        "color_scheme": "",
+        "collection": "descuento-marzo",
+        "section_header_alignment": "left",
+        "section_header_alignment_mobile": "inherit",
+        "subheading": "",
+        "heading": "Descuentos de Vacaciones",
+        "highlight_style": "none",
+        "highlight_font_style": "italic",
+        "highlight_style_color": "",
+        "highlight_text_color": "",
+        "heading_size": "h1",
+        "description": "",
+        "text_size": "text-sm",
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--underline",
+        "button_icon": "none",
+        "max_height": 0,
+        "pcard_button_type": "icon",
+        "pcard_title_line_limit": "1-line",
+        "limit": 9,
+        "columns": 3,
+        "column_gap": "medium",
+        "row_gap": "inherit",
+        "max_height_mobile": 0,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
     "rich_text_JCMTrY": {
       "type": "rich-text",
       "blocks": {
@@ -1269,8 +1307,8 @@
         "button_dCjhxX"
       ],
       "custom_css": [
-        "h1{line-height: 30px;}",
-        " h1 strong {font-size: 25px;}",
+        "h1 {line-height: 30px;}",
+        "h1 strong {font-size: 25px;}",
         "p {font-size: 13px;}",
         "@media (max-width: 768px) {h1 strong {font-size: 15px; line-height: 1; }}"
       ],
@@ -1299,6 +1337,7 @@
     "promotion_banner_byLFDQ",
     "buttons_with_icon_XJn7cx",
     "horizontal_products_list_qwYKGd",
+    "horizontal_products_list_wMc9wD",
     "shop_the_feed_UbPriU",
     "multicolumn_icon_C6634r",
     "rich_text_JCMTrY"

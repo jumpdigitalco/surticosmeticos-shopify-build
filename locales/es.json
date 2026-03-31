@@ -175,7 +175,7 @@
     "product_description": "Esta área se utiliza para describir los detalles de su producto. Informe a los clientes sobre la apariencia, la sensación y el estilo de su producto. Agregue detalles sobre el color, los materiales utilizados, el tamaño y dónde se fabricó.",
     "collection_title": "Nombre de la colección",
     "collection_description": "Descripción de la colección aquí que proporciona detalles sobre la colección.",
-    "no_script_alert":"Habilite JavaScript para usar esta función."
+    "no_script_alert": "Habilite JavaScript para usar esta función."
   },
   "products": {
     "product": {
@@ -186,7 +186,7 @@
       "choose_options": "Elegir opciones",
       "choose_options_short": "Vista",
       "quick_view": "Vista rápida",
-      "quick_view_title":"Elige tu opción",
+      "quick_view_title": "Elige tu opción",
       "shop": "Comercio",
       "view_product_list": "Ver lista de productos",
       "description": "Descripción",
@@ -277,7 +277,7 @@
       "alert_message": "Solo puedes agregar un máximo de {{ maximum }} productos para comparar.",
       "modal_title": "Comparación de productos",
       "remove": "Eliminar",
-      "toggle_compare_list":"Lista de comparación de alternar"
+      "toggle_compare_list": "Lista de comparación de alternar"
     },
     "facets": {
       "filter_and_operator_subtitle": "Combinar todos",
@@ -311,7 +311,7 @@
       "continue_shopping": "Continuar comprando",
       "no_results": "Ningún producto coincide con esos filtros.",
       "use_fewer_filters": "Utilice menos filtros o",
-      "items":"Productos"
+      "items": "Productos"
     }
   },
   "templates": {
@@ -589,6 +589,13 @@
       "max_characters": "{{ max_chars }} caracteres como máximo",
       "send_on": "AAAA-MM-DD",
       "send_on_label": "Enviar (opcional)"
+    }
+  },
+  "shopify": {
+    "checkout": {
+      "contact": {
+        "company_label": "Documento de identidad"
+      }
     }
   }
 }

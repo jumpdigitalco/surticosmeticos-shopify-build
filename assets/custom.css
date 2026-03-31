@@ -1,3 +1,7 @@
+.featured-collection .swiper-button {
+  background: #EDDCEB;
+  border: none;
+}
 
 form.cart-drawer__footer-form:hover .btn.btn--secondary::before {
   background-color: #fff !important;

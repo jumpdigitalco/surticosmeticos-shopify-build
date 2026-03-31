@@ -260,7 +260,7 @@
       "sold_out": "Agotado",
       "unavailable": "No disponible",
       "sku": "SKU",
-      "barcode": "Código de barras",
+      "barcode": "Código",
       "vendor": "Marca",
       "type": "Tipo",
       "value_unavailable": "{{ option_value }} - No disponible",

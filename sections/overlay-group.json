@@ -100,7 +100,7 @@
             "show_vendor": true,
             "show_product_type": true,
             "show_sku": false,
-            "show_barcode": false
+            "show_barcode": true
           }
         },
         "price": {

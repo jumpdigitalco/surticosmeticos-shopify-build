@@ -146,7 +146,7 @@
         "button_style": "btn--primary",
         "button_icon": "none",
         "columns": 6,
-        "banner_height": "medium",
+        "banner_height": "auto",
         "gap": "2xs",
         "enable_swiper_mobile": true,
         "show_section_divider": true,

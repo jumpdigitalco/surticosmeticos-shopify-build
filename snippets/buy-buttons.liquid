@@ -342,6 +342,15 @@
           {{ form | payment_button }}
         {%- endif -%}
       </div>
+      <div id="addi-widget-{{ section_id }}" class="addi-widget-anchor w-full mt-2"></div>
+      <script
+        data-name="shopifyAddiWidget"
+        data-id="surticosmeticos-ecommerce"
+        data-ally-slug="surticosmeticos-ecommerce"
+        data-element-reference="#addi-widget-{{ section_id }}"
+        src="https://statics.addi.com/shopify/js/shopify-co-widget-wrapper.bundle.min.js"
+        defer
+      ></script>
       <div class="product-form__error-message blocks-radius-md alert alert--error" role="alert" hidden></div>
     {%- endform -%}
   </div>

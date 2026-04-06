@@ -16,8 +16,8 @@
           "type": "banner-card",
           "settings": {
             "color_scheme": "",
-            "image": "shopify://shop_images/BANNER-A1-descuentos-bajo-el-sol-desktop.jpg",
-            "image_mobile": "shopify://shop_images/BANNER-NUEVO-descuentos-bajo-el-sol-mobile.jpg",
+            "image": "shopify://shop_images/BANNER-MAYBELLINE-PRINCIPAL-GRANGE-desktop.png",
+            "image_mobile": "shopify://shop_images/BANNER-MAYBELLINE-PRINCIPAL-pequeno-desktop.png",
             "image_overlay_opacity": 0,
             "column_span": 4,
             "row_span": 2,
@@ -414,8 +414,8 @@
         "carousel_item_size": "auto",
         "columns_desktop": 6,
         "carousel_control_color_scheme": "",
-        "padding_top": 20,
-        "padding_bottom": 20,
+        "padding_top": 40,
+        "padding_bottom": 40,
         "show_section_divider": false,
         "divider_width": "fixed"
       }
@@ -1015,42 +1015,6 @@
         "divider_width": "fixed"
       }
     },
-    "horizontal_products_list_wMc9wD": {
-      "type": "horizontal-products-list",
-      "name": "t:sections.horizontal-products-list.presets.name",
-      "settings": {
-        "container": "fixed",
-        "color_scheme": "",
-        "collection": "descuento-marzo",
-        "section_header_alignment": "left",
-        "section_header_alignment_mobile": "inherit",
-        "subheading": "",
-        "heading": "Descuentos de Vacaciones",
-        "highlight_style": "none",
-        "highlight_font_style": "italic",
-        "highlight_style_color": "",
-        "highlight_text_color": "",
-        "heading_size": "h1",
-        "description": "",
-        "text_size": "text-sm",
-        "button_label": "",
-        "button_link": "",
-        "button_style": "btn--underline",
-        "button_icon": "none",
-        "max_height": 0,
-        "pcard_button_type": "icon",
-        "pcard_title_line_limit": "1-line",
-        "limit": 9,
-        "columns": 3,
-        "column_gap": "medium",
-        "row_gap": "inherit",
-        "max_height_mobile": 0,
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "show_section_divider": false,
-        "divider_width": "fixed"
-      }
-    },
     "shop_the_feed_UbPriU": {
       "type": "shop-the-feed",
       "blocks": {
@@ -1339,7 +1303,6 @@
     "promotion_banner_byLFDQ",
     "buttons_with_icon_XJn7cx",
     "horizontal_products_list_qwYKGd",
-    "horizontal_products_list_wMc9wD",
     "shop_the_feed_UbPriU",
     "multicolumn_icon_C6634r",
     "rich_text_JCMTrY"

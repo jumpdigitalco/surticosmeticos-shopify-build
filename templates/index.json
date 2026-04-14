@@ -16,8 +16,8 @@
           "type": "banner-card",
           "settings": {
             "color_scheme": "",
-            "image": "shopify://shop_images/BANNER-MAYBELLINE-PRINCIPAL-GRANGE-desktop.png",
-            "image_mobile": "shopify://shop_images/BANNER-MAYBELLINE-PRINCIPAL-pequeno-desktop.png",
+            "image": "shopify://shop_images/banner-pocion-greeicy-kit-crecimiento-936x608.png",
+            "image_mobile": "shopify://shop_images/banner-pocion-greeicy-kit-crecimiento-500x700.png",
             "image_overlay_opacity": 0,
             "column_span": 4,
             "row_span": 2,
@@ -27,7 +27,7 @@
             "content_alignment": "left",
             "content_position_mobile": "middle-center",
             "content_alignment_mobile": "center",
-            "card_link": "shopify://collections/descuento-marzo",
+            "card_link": "shopify://collections/pocion",
             "subheading": "",
             "subheading_style": "",
             "heading": "",
@@ -53,7 +53,7 @@
           "settings": {
             "color_scheme": "",
             "image": "shopify://shop_images/banner-pequeno-babyliss-xldesktop-pequeno.png",
-            "image_mobile": "shopify://shop_images/banner-pequeno-babyliss-xldesktop-pequeno.png",
+            "image_mobile": "shopify://shop_images/banner-babyliss-xl-500x700_mob.png",
             "image_overlay_opacity": 0,
             "column_span": 2,
             "row_span": 1,
@@ -89,7 +89,7 @@
           "settings": {
             "color_scheme": "",
             "image": "shopify://shop_images/BANNER-PEQUENO-2-PERFUME-CAPILAR-CLICK-HAIR-desktop-pequeno.png",
-            "image_mobile": "shopify://shop_images/BANNER-PEQUENO-2-PERFUME-CAPILAR-CLICK-HAIR-desktop-pequeno.png",
+            "image_mobile": "shopify://shop_images/BANNER-PEQUENO-CAPILAR-CLICK-HAIR-500X700_mob.png",
             "image_overlay_opacity": 0,
             "column_span": 2,
             "row_span": 1,
@@ -416,6 +416,48 @@
         "carousel_control_color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 40,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "countdown_timer_iP8wBq": {
+      "type": "countdown-timer",
+      "blocks": {
+        "heading_FhbcBH": {
+          "type": "heading",
+          "settings": {
+            "heading": "Oferta Solo Hoy",
+            "highlight_style": "none",
+            "highlight_font_style": "italic",
+            "highlight_style_color": "",
+            "highlight_text_color": "",
+            "heading_size": "hd2"
+          }
+        },
+        "timer_FYjWWA": {
+          "type": "timer",
+          "settings": {
+            "type": "fixed_time",
+            "style": "number",
+            "number_size": "h1",
+            "duration": "every_24_hrs",
+            "time": "2026/04/09 11:59 PM"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FhbcBH",
+        "timer_FYjWWA"
+      ],
+      "name": "t:sections.countdown-timer.name",
+      "settings": {
+        "container": "full",
+        "color_schema": "",
+        "image_overlay_opacity": 0,
+        "content_alignment": "center",
+        "text_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 10,
         "show_section_divider": false,
         "divider_width": "fixed"
       }
@@ -1296,6 +1338,7 @@
     "grid_banner_qxanh4",
     "featured_collection_bdaamt",
     "collection_list_slider_6qbNfj",
+    "countdown_timer_iP8wBq",
     "custom_content_rUmby9",
     "featured_collection_NyGhf3",
     "brand_logos_mtjpT9",

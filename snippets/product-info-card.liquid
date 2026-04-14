@@ -8,6 +8,14 @@
   assign card_heading = block.settings.heading
   assign card_subheading = block.settings.subheading
   assign card_link = block.settings.link
+  assign drawer_id = 'ProductInfoDrawer-' | append: block.id
+
+  assign page_handle = blank
+  assign linked_page = blank
+  if card_link != blank and card_link contains '/pages/'
+    assign page_handle = card_link | split: '/pages/' | last | split: '?' | first | split: '#' | first
+    assign linked_page = pages[page_handle]
+  endif
 -%}
 
 {%- if card_heading != blank or card_subheading != blank -%}
@@ -24,22 +32,67 @@
           <p class="product-info-card__subtitle">{{ card_subheading | escape }}</p>
         {%- endif -%}
       </div>
-      {%- if card_link != blank -%}
-        <a
-          href="{{ card_link }}"
-          class="product-info-card__action"
-          {% if block.settings.link_new_tab %}
-            target="_blank" rel="noopener noreferrer"
-          {% endif %}
-          aria-label="{{ card_heading | default: card_subheading | escape }}"
-        >
-          {% render 'icon-caret-right', size: 'small' %}
-        </a>
-      {%- else -%}
-        <span class="product-info-card__action" aria-hidden="true" tabindex="-1">
-          {% render 'icon-caret-right', size: 'small' %}
-        </span>
-      {%- endif -%}
+      <button
+        type="button"
+        class="product-info-card__action"
+        aria-controls="{{ drawer_id }}"
+        aria-expanded="false"
+        aria-label="{{ card_heading | default: card_subheading | escape }}"
+      >
+        {% render 'icon-caret-right', size: 'small' %}
+      </button>
     </div>
+
+    <drawer-component
+      id="{{ drawer_id }}"
+      class="drawer drawer--right"
+      hidden
+    >
+      <div class="fixed-overlay" aria-controls="{{ drawer_id }}"></div>
+      <div class="drawer__inner color-{{ settings.overlay_color_scheme }}">
+        <button
+          class="drawer__close-btn"
+          aria-controls="{{ drawer_id }}"
+          aria-label="{{ 'accessibility.close' | t }}"
+          type="button"
+        >
+          {% render 'icon-close' %}
+        </button>
+
+        <div class="drawer__body v-scrollable h-full">
+          {%- if card_heading != blank -%}
+            <h2 class="h4">{{ card_heading | escape }}</h2>
+          {%- endif -%}
+          {%- if card_subheading != blank -%}
+            <p class="text-subtext">{{ card_subheading | escape }}</p>
+          {%- endif -%}
+
+          {%- if linked_page != blank -%}
+            <div class="rte">
+              {{ linked_page.content }}
+            </div>
+          {%- elsif card_link != blank -%}
+            <div class="grid gap-3">
+              <iframe
+                title="{{ card_heading | default: card_subheading | escape }}"
+                src="{{ card_link }}"
+                loading="lazy"
+                style="width: 100%; height: 100%; min-height: 60vh; border: 0;"
+              ></iframe>
+              <a
+                class="btn btn--plain btn--with-icon"
+                href="{{ card_link }}"
+                {% if block.settings.link_new_tab %}
+                  target="_blank" rel="noopener noreferrer"
+                {% endif %}
+              >
+                <span class="btn__text">Abrir en una pestaña nueva</span>
+                <span class="btn__icon inline-flex">{%- render 'icon-caret-right', size: '2xs' -%}</span>
+              </a>
+            </div>
+          {%- endif -%}
+        </div>
+      </div>
+    </drawer-component>
   </div>
 {%- endif -%}
